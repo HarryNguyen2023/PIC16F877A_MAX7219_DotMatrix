@@ -11,3 +11,5 @@ In this project, I have programmed not only the applied executable for this proj
 [2]. Khaled Magdy, 2022, STM32 MAX7219 Dot Matrix Display Interfacing Library, https://deepbluembedded.com/stm32-max7219-dot-matrix-display-interfacing-library/.
 
 [3]. Microchip, PIC16F87XA Data Sheet.
+
+[4]. Maxim, MAX7219/MAX7221 Data Sheet.
