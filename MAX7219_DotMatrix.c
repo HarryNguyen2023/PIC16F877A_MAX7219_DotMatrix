@@ -64,3 +64,11 @@ void Matrix_Write_Char(uint8_t slave, uint8_t data)
         TxByte(slave, col, FONT_7x5[data][col - 2]);
     TxByte(slave, col, 0x00);
 }
+
+// Function to change the brightness intensity ò the dot matrix
+void Matrix_Intensity(uint8_t slave, uint8_t intensity)
+{
+    if(intensity > 15)
+        intensity = 15;
+    TxByte(slave, 0x0A, intensity);
+}
