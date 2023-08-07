@@ -1,4 +1,4 @@
-# 1 "PIC16F877A_SPI.c"
+# 1 "PIC16F877A_SPI_MAX7219_DotMatrix.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,11 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "PIC16F877A_SPI.c" 2
+# 1 "PIC16F877A_SPI_MAX7219_DotMatrix.c" 2
+# 1 "./MAX7219_DotMatrix.h" 1
+
+
+
 # 1 "./PIC16F877A_SPI.h" 1
 
 
@@ -1873,111 +1877,63 @@ void SPI_Tx_Byte(uint8_t data);
 void SPI_Tx_String(char* string);
 void Rx_Byte_Interrupt(uint8_t* rcv);
 void Rx_String_Interrupt(uint8_t* string, uint16_t len);
-# 1 "PIC16F877A_SPI.c" 2
+# 4 "./MAX7219_DotMatrix.h" 2
 
 
 
-void SPI_Master_Init()
+char FONT_7x5[10][5] =
 {
+    {0b00111110,0b01010001,0b01001001,0b01000101,0b00111110},
+    {0b00000000,0b01000010,0b01111111,0b01000000,0b00000000},
+    {0b01000010,0b01100001,0b01010001,0b01001001,0b01000110},
+    {0b00100001,0b01000001,0b01000101,0b01001011,0b00110001},
+    {0b00011000,0b00010100,0b00010010,0b01111111,0b00010000},
+    {0b00100111,0b01000101,0b01000101,0b01000101,0b00111001},
+    {0b00111100,0b01001010,0b01001001,0b01001001,0b00110000},
+    {0b00000011,0b01110001,0b00001001,0b00000101,0b00000011},
+    {0b00110110,0b01001001,0b01001001,0b01001001,0b00110110},
+    {0b00000110,0b01001001,0b01001001,0b00101001,0b00011110}
+};
 
-    TRISD = 0x00;
+void Matrix_Init(void);
+void Matrix_Clear(uint8_t slave);
+void Matrix_Write_Char(uint8_t slave, uint8_t data);
+# 1 "PIC16F877A_SPI_MAX7219_DotMatrix.c" 2
 
-    SSPM3 = 0;
-    SSPM2 = 0;
-    SSPM1 = 0;
-    SSPM0 = 0;
-
-    SSPEN = 1;
-
-    CKP = 0;
-    CKE = 0;
-
-    SMP = 0;
-
-    TRISC5 = 0;
-    TRISC4 = 1;
-    TRISC3 = 0;
-
-
+# 1 "./config.h" 1
 
 
-}
 
 
-void SPI_Slave_Init()
-{
-
-    SSPM3 = 0;
-    SSPM2 = 1;
-    SSPM1 = 0;
-    SSPM0 = 0;
-
-    SSPEN = 1;
-
-    SMP = 0;
-
-    CKP = 0;
-    CKE = 0;
-
-    TRISC5 = 0;
-    TRISC4 = 1;
-    TRISC3 = 0;
-    TRISA5 = 1;
-
-    PCFG3 = 0;
-    PCFG2 = 1;
-    PCFG1 = 0;
-    PCFG0 = 0;
-
-    SSPIE = 1;
-    PEIE = 1;
-    GIE = 1;
-}
+#pragma config FOSC = HS
+#pragma config WDTE = OFF
+#pragma config PWRTE = OFF
+#pragma config BOREN = ON
+#pragma config LVP = ON
+#pragma config CPD = OFF
+#pragma config WRT = OFF
+#pragma config CP = OFF
+# 2 "PIC16F877A_SPI_MAX7219_DotMatrix.c" 2
 
 
-void SS_Enable(uint8_t slave)
-{
-    if(slave < 1)
-        return;
-    PORTD = ~SS_pin[slave - 1];
-}
 
 
-void SS_Disable(uint8_t slave)
-{
-    if(slave < 1)
-        return;
-    PORTD = 0xFF;
-}
+
+void main(void) {
+
+    uint8_t c = 0;
 
 
-void SPI_Tx_Byte(uint8_t data)
-{
-    SSPBUF = data;
-
-    if(WCOL)
-        WCOL = 0;
-}
+    Matrix_Init();
+    Matrix_Clear(1);
 
 
-void SPI_Tx_String(char* string)
-{
-    for(uint16_t i = 0; string[i] != '\0'; ++i)
-        SPI_Tx_Byte(string[i]);
-}
-
-
-void Rx_Byte_Interrupt(uint8_t* rcv)
-{
-    if(SSPIF)
+    while(1)
     {
-        *rcv = SSPBUF;
+        Matrix_Write_Char(1, c++);
+        if(c > 9)
+            c = 0;
+        _delay((unsigned long)((1000)*(16000000/4000.0)));
     }
-}
-
-
-void Rx_String_Interrupt(uint8_t* string, uint16_t len)
-{
-    for(uint16_t i = 0; i < len; ++i)
-        string[i] = SSPBUF;
+    return;
 }

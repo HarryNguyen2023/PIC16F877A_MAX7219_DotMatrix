@@ -21,5 +21,6 @@ char FONT_7x5[10][5] =
 void Matrix_Init(void);
 void Matrix_Clear(uint8_t slave);
 void Matrix_Write_Char(uint8_t slave, uint8_t data);
+void Matrix_Intensity(uint8_t slave, uint8_t intensity);
 
 #endif

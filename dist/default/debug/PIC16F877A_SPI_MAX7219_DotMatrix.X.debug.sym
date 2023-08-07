@@ -196,8 +196,8 @@ text7 CE6 D05 CODE CE6 0
 text8 CCE CE5 CODE CCE 0
 text9 CB8 CCD CODE CB8 0
 %locals
-dist/default/production\PIC16F877A_SPI_MAX7219_DotMatrix.X.production.o
-C:\Users\84935\AppData\Local\Temp\xcAsg6g.\driver_tmp_1.s
+dist/default/debug\PIC16F877A_SPI_MAX7219_DotMatrix.X.debug.o
+C:\Users\84935\AppData\Local\Temp\xcAs2n0.\driver_tmp_1.s
 718 7ED 0 CODE 0
 721 7ED 0 CODE 0
 774 7ED 0 CODE 0

@@ -5,16 +5,18 @@ void SPI_Master_Init()
 {
     // Configure PORTD to ouput 
     TRISD = 0x00;
-    // Initiate the master mode with data rate Fosc/16
+    // Initiate the master mode with data rate Fosc/4
     SSPM3 = 0;
     SSPM2 = 0;
     SSPM1 = 0;
-    SSPM0 = 1;
+    SSPM0 = 0;
     // Enable SPI module
     SSPEN = 1;
     // Clock edge configuration (SPI mode num. 1)
     CKP = 0;
     CKE = 0;
+    // Sample at middle 
+    SMP = 0;
     // Configure I/O pins
     TRISC5 = 0;     // SDO
     TRISC4 = 1;      // SDI

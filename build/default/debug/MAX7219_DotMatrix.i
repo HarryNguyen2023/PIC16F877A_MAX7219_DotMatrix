@@ -1,4 +1,4 @@
-# 1 "PIC16F877A_SPI.c"
+# 1 "MAX7219_DotMatrix.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,11 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "PIC16F877A_SPI.c" 2
+# 1 "MAX7219_DotMatrix.c" 2
+# 1 "./MAX7219_DotMatrix.h" 1
+
+
+
 # 1 "./PIC16F877A_SPI.h" 1
 
 
@@ -1873,111 +1877,91 @@ void SPI_Tx_Byte(uint8_t data);
 void SPI_Tx_String(char* string);
 void Rx_Byte_Interrupt(uint8_t* rcv);
 void Rx_String_Interrupt(uint8_t* string, uint16_t len);
-# 1 "PIC16F877A_SPI.c" 2
+# 4 "./MAX7219_DotMatrix.h" 2
 
 
 
-void SPI_Master_Init()
+char FONT_7x5[10][5] =
+{
+    {0b00111110,0b01010001,0b01001001,0b01000101,0b00111110},
+    {0b00000000,0b01000010,0b01111111,0b01000000,0b00000000},
+    {0b01000010,0b01100001,0b01010001,0b01001001,0b01000110},
+    {0b00100001,0b01000001,0b01000101,0b01001011,0b00110001},
+    {0b00011000,0b00010100,0b00010010,0b01111111,0b00010000},
+    {0b00100111,0b01000101,0b01000101,0b01000101,0b00111001},
+    {0b00111100,0b01001010,0b01001001,0b01001001,0b00110000},
+    {0b00000011,0b01110001,0b00001001,0b00000101,0b00000011},
+    {0b00110110,0b01001001,0b01001001,0b01001001,0b00110110},
+    {0b00000110,0b01001001,0b01001001,0b00101001,0b00011110}
+};
+
+void Matrix_Init(void);
+void Matrix_Clear(uint8_t slave);
+void Matrix_Write_Char(uint8_t slave, uint8_t data);
+# 1 "MAX7219_DotMatrix.c" 2
+
+
+
+
+
+static void TxByte(uint8_t slave, uint8_t col, uint8_t data)
 {
 
-    TRISD = 0x00;
+    SS_Enable(slave);
 
-    SSPM3 = 0;
-    SSPM2 = 0;
-    SSPM1 = 0;
-    SSPM0 = 0;
+    SPI_Tx_Byte(col);
+    SPI_Tx_Byte(data);
 
-    SSPEN = 1;
-
-    CKP = 0;
-    CKE = 0;
-
-    SMP = 0;
-
-    TRISC5 = 0;
-    TRISC4 = 1;
-    TRISC3 = 0;
-
-
-
-
+    SS_Disable(slave);
 }
 
 
-void SPI_Slave_Init()
+
+
+void Matrix_Init()
 {
 
-    SSPM3 = 0;
-    SSPM2 = 1;
-    SSPM1 = 0;
-    SSPM0 = 0;
-
-    SSPEN = 1;
-
-    SMP = 0;
-
-    CKP = 0;
-    CKE = 0;
-
-    TRISC5 = 0;
-    TRISC4 = 1;
-    TRISC3 = 0;
-    TRISA5 = 1;
-
-    PCFG3 = 0;
-    PCFG2 = 1;
-    PCFG1 = 0;
-    PCFG0 = 0;
-
-    SSPIE = 1;
-    PEIE = 1;
-    GIE = 1;
-}
+    SPI_Master_Init();
 
 
-void SS_Enable(uint8_t slave)
-{
-    if(slave < 1)
-        return;
-    PORTD = ~SS_pin[slave - 1];
-}
-
-
-void SS_Disable(uint8_t slave)
-{
-    if(slave < 1)
-        return;
-    PORTD = 0xFF;
-}
-
-
-void SPI_Tx_Byte(uint8_t data)
-{
-    SSPBUF = data;
-
-    if(WCOL)
-        WCOL = 0;
-}
-
-
-void SPI_Tx_String(char* string)
-{
-    for(uint16_t i = 0; string[i] != '\0'; ++i)
-        SPI_Tx_Byte(string[i]);
-}
-
-
-void Rx_Byte_Interrupt(uint8_t* rcv)
-{
-    if(SSPIF)
+    for(uint8_t i = 1; i <= 1; ++i)
     {
-        *rcv = SSPBUF;
+
+        TxByte(i, 0x09, 0x00);
+
+
+        TxByte(i, 0x0A, 0x08);
+
+
+        TxByte(i, 0x0B, 0x07);
+
+
+        TxByte(i, 0x0C, 0x01);
+
+
+        TxByte(i, 0x0F, 0x00);
     }
 }
 
 
-void Rx_String_Interrupt(uint8_t* string, uint16_t len)
+void Matrix_Clear(uint8_t slave)
 {
-    for(uint16_t i = 0; i < len; ++i)
-        string[i] = SSPBUF;
+    for(uint8_t j = 1; j < 9; ++j)
+        TxByte(slave, j, 0x00);
+}
+
+
+void Matrix_Write_Char(uint8_t slave, uint8_t data)
+{
+    uint8_t col = 1;
+    uint8_t font = 5;
+
+
+    if(data > 9)
+        return;
+
+    TxByte(slave, col, 0x00);
+    for(col = 2; col <= font + 1; ++col)
+        TxByte(slave, col, FONT_7x5[data][col - 2]);
+    TxByte(slave, col, 0x00);
 }
