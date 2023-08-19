@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.41 build 20230208172133 
-                                                                                               Mon Aug 07 07:54:21 2023
+                                                                                               Sat Aug 19 09:02:40 2023
 
 Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1 
      1                           	processor	16F877A
@@ -313,125 +313,125 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
    299     018D                     	;# 
    300                           
    301                           	psect	idataBANK0
-   302     0721                     __pidataBANK0:
+   302     0720                     __pidataBANK0:
    303                           
    304                           ;initializer for _FONT_7x5
-   305     0721  343E               	retlw	62
-   306     0722  3451               	retlw	81
-   307     0723  3449               	retlw	73
-   308     0724  3445               	retlw	69
-   309     0725  343E               	retlw	62
-   310     0726  3400               	retlw	0
-   311     0727  3442               	retlw	66
-   312     0728  347F               	retlw	127
-   313     0729  3440               	retlw	64
-   314     072A  3400               	retlw	0
-   315     072B  3442               	retlw	66
-   316     072C  3461               	retlw	97
-   317     072D  3451               	retlw	81
-   318     072E  3449               	retlw	73
-   319     072F  3446               	retlw	70
-   320     0730  3421               	retlw	33
-   321     0731  3441               	retlw	65
-   322     0732  3445               	retlw	69
-   323     0733  344B               	retlw	75
-   324     0734  3431               	retlw	49
-   325     0735  3418               	retlw	24
-   326     0736  3414               	retlw	20
-   327     0737  3412               	retlw	18
-   328     0738  347F               	retlw	127
-   329     0739  3410               	retlw	16
-   330     073A  3427               	retlw	39
-   331     073B  3445               	retlw	69
-   332     073C  3445               	retlw	69
-   333     073D  3445               	retlw	69
-   334     073E  3439               	retlw	57
-   335     073F  343C               	retlw	60
-   336     0740  344A               	retlw	74
-   337     0741  3449               	retlw	73
-   338     0742  3449               	retlw	73
-   339     0743  3430               	retlw	48
-   340     0744  3403               	retlw	3
-   341     0745  3471               	retlw	113
-   342     0746  3409               	retlw	9
-   343     0747  3405               	retlw	5
-   344     0748  3403               	retlw	3
-   345     0749  3436               	retlw	54
-   346     074A  3449               	retlw	73
-   347     074B  3449               	retlw	73
-   348     074C  3449               	retlw	73
-   349     074D  3436               	retlw	54
-   350     074E  3406               	retlw	6
-   351     074F  3449               	retlw	73
-   352     0750  3449               	retlw	73
-   353     0751  3429               	retlw	41
-   354     0752  341E               	retlw	30
+   305     0720  343E               	retlw	62
+   306     0721  3451               	retlw	81
+   307     0722  3449               	retlw	73
+   308     0723  3445               	retlw	69
+   309     0724  343E               	retlw	62
+   310     0725  3400               	retlw	0
+   311     0726  3442               	retlw	66
+   312     0727  347F               	retlw	127
+   313     0728  3440               	retlw	64
+   314     0729  3400               	retlw	0
+   315     072A  3442               	retlw	66
+   316     072B  3461               	retlw	97
+   317     072C  3451               	retlw	81
+   318     072D  3449               	retlw	73
+   319     072E  3446               	retlw	70
+   320     072F  3421               	retlw	33
+   321     0730  3441               	retlw	65
+   322     0731  3445               	retlw	69
+   323     0732  344B               	retlw	75
+   324     0733  3431               	retlw	49
+   325     0734  3418               	retlw	24
+   326     0735  3414               	retlw	20
+   327     0736  3412               	retlw	18
+   328     0737  347F               	retlw	127
+   329     0738  3410               	retlw	16
+   330     0739  3427               	retlw	39
+   331     073A  3445               	retlw	69
+   332     073B  3445               	retlw	69
+   333     073C  3445               	retlw	69
+   334     073D  3439               	retlw	57
+   335     073E  343C               	retlw	60
+   336     073F  344A               	retlw	74
+   337     0740  3449               	retlw	73
+   338     0741  3449               	retlw	73
+   339     0742  3430               	retlw	48
+   340     0743  3403               	retlw	3
+   341     0744  3471               	retlw	113
+   342     0745  3409               	retlw	9
+   343     0746  3405               	retlw	5
+   344     0747  3403               	retlw	3
+   345     0748  3436               	retlw	54
+   346     0749  3449               	retlw	73
+   347     074A  3449               	retlw	73
+   348     074B  3449               	retlw	73
+   349     074C  3436               	retlw	54
+   350     074D  3406               	retlw	6
+   351     074E  3449               	retlw	73
+   352     074F  3449               	retlw	73
+   353     0750  3429               	retlw	41
+   354     0751  341E               	retlw	30
    355                           
    356                           ;initializer for _SS_pin
-   357     0753  3401               	retlw	1
-   358     0754  3402               	retlw	2
-   359     0755  3404               	retlw	4
-   360     0756  3408               	retlw	8
-   361     0757  3410               	retlw	16
-   362     0758  3420               	retlw	32
-   363     0759  3440               	retlw	64
-   364     075A  3480               	retlw	128
+   357     0752  3401               	retlw	1
+   358     0753  3402               	retlw	2
+   359     0754  3404               	retlw	4
+   360     0755  3408               	retlw	8
+   361     0756  3410               	retlw	16
+   362     0757  3420               	retlw	32
+   363     0758  3440               	retlw	64
+   364     0759  3480               	retlw	128
    365     0013                     _SSPBUF	set	19
    366     0008                     _PORTD	set	8
-   367     0063                     _SSPIF	set	99
-   368     00A7                     _WCOL	set	167
-   369     005F                     _GIE	set	95
-   370     005E                     _PEIE	set	94
-   371     00A4                     _CKP	set	164
-   372     00A5                     _SSPEN	set	165
-   373     00A0                     _SSPM0	set	160
-   374     00A1                     _SSPM1	set	161
-   375     00A2                     _SSPM2	set	162
-   376     00A3                     _SSPM3	set	163
-   377     0088                     _TRISD	set	136
-   378     0463                     _SSPIE	set	1123
-   379     04F8                     _PCFG0	set	1272
-   380     04F9                     _PCFG1	set	1273
-   381     04FA                     _PCFG2	set	1274
-   382     04FB                     _PCFG3	set	1275
-   383     042D                     _TRISA5	set	1069
-   384     043B                     _TRISC3	set	1083
-   385     043C                     _TRISC4	set	1084
-   386     043D                     _TRISC5	set	1085
-   387     04A7                     _SMP	set	1191
-   388     04A6                     _CKE	set	1190
-   389                           
-   390                           	psect	cinit
-   391     07ED                     start_initialization:	
-   392                           ; #config settings
-   393                           
-   394     07ED                     __initialization:
-   395                           
-   396                           ; Initialize objects allocated to BANK0
-   397     07ED  1383               	bcf	3,7	;select IRP bank0
-   398     07EE  305A               	movlw	low (__pdataBANK0+58)
-   399     07EF  00FD               	movwf	btemp+-1
-   400     07F0  3007               	movlw	high __pidataBANK0
-   401     07F1  00FE               	movwf	btemp
-   402     07F2  3021               	movlw	low __pidataBANK0
-   403     07F3  00FF               	movwf	btemp+1
-   404     07F4  3020               	movlw	low __pdataBANK0
-   405     07F5  0084               	movwf	4
-   406     07F6  120A  118A  269A  120A  118A  	fcall	init_ram0
-   407                           
-   408                           ; Clear objects allocated to BANK0
-   409     07FB  01DD               	clrf	__pbssBANK0& (0+127)
+   367     00A7                     _WCOL	set	167
+   368     005F                     _GIE	set	95
+   369     005E                     _PEIE	set	94
+   370     00A4                     _CKP	set	164
+   371     00A5                     _SSPEN	set	165
+   372     00A0                     _SSPM0	set	160
+   373     00A1                     _SSPM1	set	161
+   374     00A2                     _SSPM2	set	162
+   375     00A3                     _SSPM3	set	163
+   376     0088                     _TRISD	set	136
+   377     0463                     _SSPIE	set	1123
+   378     04F8                     _PCFG0	set	1272
+   379     04F9                     _PCFG1	set	1273
+   380     04FA                     _PCFG2	set	1274
+   381     04FB                     _PCFG3	set	1275
+   382     042D                     _TRISA5	set	1069
+   383     043B                     _TRISC3	set	1083
+   384     043C                     _TRISC4	set	1084
+   385     043D                     _TRISC5	set	1085
+   386     04A7                     _SMP	set	1191
+   387     04A6                     _CKE	set	1190
+   388                           
+   389                           	psect	cinit
+   390     07EC                     start_initialization:	
+   391                           ; #config settings
+   392                           
+   393     07EC                     __initialization:
+   394                           
+   395                           ; Initialize objects allocated to BANK0
+   396     07EC  1383               	bcf	3,7	;select IRP bank0
+   397     07ED  305A               	movlw	low (__pdataBANK0+58)
+   398     07EE  00FD               	movwf	btemp+-1
+   399     07EF  3007               	movlw	high __pidataBANK0
+   400     07F0  00FE               	movwf	btemp
+   401     07F1  3020               	movlw	low __pidataBANK0
+   402     07F2  00FF               	movwf	btemp+1
+   403     07F3  3020               	movlw	low __pdataBANK0
+   404     07F4  0084               	movwf	4
+   405     07F5  120A  118A  2699  120A  118A  	fcall	init_ram0
+   406                           
+   407                           ; Clear objects allocated to BANK0
+   408     07FA  01DD               	clrf	__pbssBANK0& (0+127)
+   409     07FB  01DE               	clrf	(__pbssBANK0+1)& (0+127)
    410     07FC                     end_of_initialization:	
    411                           ;End of C runtime variable initialization code
    412                           
    413     07FC                     __end_of__initialization:
    414     07FC  0183               	clrf	3
-   415     07FD  120A  118A  2EEF   	ljmp	_main	;jump to C main() function
+   415     07FD  120A  118A  2EEE   	ljmp	_main	;jump to C main() function
    416                           
    417                           	psect	bssBANK0
    418     005D                     __pbssBANK0:
-   419     005D                     _rcv_byte:
-   420     005D                     	ds	1
+   419     005D                     _spi_str_idx:
+   420     005D                     	ds	2
    421                           
    422                           	psect	dataBANK0
    423     0020                     __pdataBANK0:
@@ -441,31 +441,31 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
    427     0052                     	ds	8
    428                           
    429                           	psect	inittext
-   430     0696                     init_fetch0:	
+   430     0695                     init_fetch0:	
    431                           ;	Called with low address in FSR and high address in W
    432                           
-   433     0696  087E               	movf	btemp,w
-   434     0697  008A               	movwf	10
-   435     0698  087F               	movf	btemp+1,w
-   436     0699  0082               	movwf	2
-   437     069A                     init_ram0:	
+   433     0695  087E               	movf	btemp,w
+   434     0696  008A               	movwf	10
+   435     0697  087F               	movf	btemp+1,w
+   436     0698  0082               	movwf	2
+   437     0699                     init_ram0:	
    438                           ;Called with:
    439                           ;	high address of idata address in btemp 
    440                           ;	low address of idata address in btemp+1 
    441                           ;	low address of data in FSR
    442                           ;	high address + 1 of data in btemp-1
    443                           
-   444     069A  120A  118A  2696  120A  118A  	fcall	init_fetch0
-   445     069F  0080               	movwf	0
-   446     06A0  0A84               	incf	4,f
-   447     06A1  0804               	movf	4,w
-   448     06A2  067D               	xorwf	btemp+-1,w
-   449     06A3  1903               	btfsc	3,2
-   450     06A4  3400               	retlw	0
-   451     06A5  0AFF               	incf	btemp+1,f
-   452     06A6  1903               	btfsc	3,2
-   453     06A7  0AFE               	incf	btemp,f
-   454     06A8  2E9A               	goto	init_ram0
+   444     0699  120A  118A  2695  120A  118A  	fcall	init_fetch0
+   445     069E  0080               	movwf	0
+   446     069F  0A84               	incf	4,f
+   447     06A0  0804               	movf	4,w
+   448     06A1  067D               	xorwf	btemp+-1,w
+   449     06A2  1903               	btfsc	3,2
+   450     06A3  3400               	retlw	0
+   451     06A4  0AFF               	incf	btemp+1,f
+   452     06A5  1903               	btfsc	3,2
+   453     06A6  0AFE               	incf	btemp,f
+   454     06A7  2E99               	goto	init_ram0
    455                           
    456                           	psect	cstackCOMMON
    457     0070                     __pcstackCOMMON:
@@ -598,7 +598,7 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
    584     005A                     	ds	3
    585                           
    586                           	psect	maintext
-   587     06EF                     __pmaintext:	
+   587     06EE                     __pmaintext:	
    588 ;;
    589 ;;Main: autosize = 0, tempsize = 3, incstack = 0, save=0
    590 ;;
@@ -633,79 +633,79 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
    619 ;; This function uses a non-reentrant model
    620 ;;
    621                           
-   622     06EF                     _main:	
+   622     06EE                     _main:	
    623                           ;psect for function _main
    624                           
-   625     06EF                     l957:	
+   625     06EE                     l993:	
    626                           ;incstack = 0
    627                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
    628                           
    629                           
    630                           ;PIC16F877A_SPI_MAX7219_DotMatrix.c: 9:     uint8_t c = 0;
-   631     06EF  01FD               	clrf	main@c
-   632     06F0                     l959:
+   631     06EE  01FD               	clrf	main@c
+   632     06EF                     l995:
    633                           
    634                           ;PIC16F877A_SPI_MAX7219_DotMatrix.c: 12:     Matrix_Init();
-   635     06F0  120A  118A  275B  120A  118A  	fcall	_Matrix_Init
-   636     06F5                     l961:
+   635     06EF  120A  118A  275A  120A  118A  	fcall	_Matrix_Init
+   636     06F4                     l997:
    637                           
    638                           ;PIC16F877A_SPI_MAX7219_DotMatrix.c: 13:     Matrix_Clear(1);
-   639     06F5  3001               	movlw	1
-   640     06F6  120A  118A  26BE  120A  118A  	fcall	_Matrix_Clear
-   641     06FB                     l963:
+   639     06F4  3001               	movlw	1
+   640     06F5  120A  118A  26BD  120A  118A  	fcall	_Matrix_Clear
+   641     06FA                     l999:
    642                           
    643                           ;PIC16F877A_SPI_MAX7219_DotMatrix.c: 17:     {;PIC16F877A_SPI_MAX7219_DotMatrix.c: 18:  
       +                                 Matrix_Write_Char(1, c++);
-   644     06FB  087D               	movf	main@c,w
-   645     06FC  00F6               	movwf	Matrix_Write_Char@data
-   646     06FD  3001               	movlw	1
-   647     06FE  120A  118A  279D  120A  118A  	fcall	_Matrix_Write_Char
-   648     0703                     l965:
-   649     0703  3001               	movlw	1
-   650     0704  00FF               	movwf	btemp+1
-   651     0705  087F               	movf	btemp+1,w
-   652     0706  07FD               	addwf	main@c,f
-   653     0707                     l967:
+   644     06FA  087D               	movf	main@c,w
+   645     06FB  00F6               	movwf	Matrix_Write_Char@data
+   646     06FC  3001               	movlw	1
+   647     06FD  120A  118A  279C  120A  118A  	fcall	_Matrix_Write_Char
+   648     0702                     l1001:
+   649     0702  3001               	movlw	1
+   650     0703  00FF               	movwf	btemp+1
+   651     0704  087F               	movf	btemp+1,w
+   652     0705  07FD               	addwf	main@c,f
+   653     0706                     l1003:
    654                           
    655                           ;PIC16F877A_SPI_MAX7219_DotMatrix.c: 19:         if(c > 9)
-   656     0707  300A               	movlw	10
-   657     0708  027D               	subwf	main@c,w
-   658     0709  1C03               	skipc
-   659     070A  2F0C               	goto	u211
-   660     070B  2F0D               	goto	u210
-   661     070C                     u211:
-   662     070C  2F0E               	goto	l971
-   663     070D                     u210:
-   664     070D                     l969:
+   656     0706  300A               	movlw	10
+   657     0707  027D               	subwf	main@c,w
+   658     0708  1C03               	skipc
+   659     0709  2F0B               	goto	u231
+   660     070A  2F0C               	goto	u230
+   661     070B                     u231:
+   662     070B  2F0D               	goto	l1007
+   663     070C                     u230:
+   664     070C                     l1005:
    665                           
    666                           ;PIC16F877A_SPI_MAX7219_DotMatrix.c: 20:             c = 0;
-   667     070D  01FD               	clrf	main@c
-   668     070E                     l971:
+   667     070C  01FD               	clrf	main@c
+   668     070D                     l1007:
    669                           
    670                           ;PIC16F877A_SPI_MAX7219_DotMatrix.c: 21:         _delay((unsigned long)((1000)*(16000000
       +                          /4000.0)));
-   671     070E  3015               	movlw	21
-   672     070F  1283               	bcf	3,5	;RP0=0, select bank0
-   673     0710  1303               	bcf	3,6	;RP1=0, select bank0
-   674     0711  00DC               	movwf	??_main+2
-   675     0712  304B               	movlw	75
-   676     0713  00DB               	movwf	??_main+1
-   677     0714  30BD               	movlw	189
-   678     0715  00DA               	movwf	??_main
-   679     0716                     u227:
-   680     0716  0BDA               	decfsz	??_main,f
-   681     0717  2F16               	goto	u227
-   682     0718  0BDB               	decfsz	??_main+1,f
-   683     0719  2F16               	goto	u227
-   684     071A  0BDC               	decfsz	??_main+2,f
-   685     071B  2F16               	goto	u227
-   686     071C  2F1D               	nop2
-   687     071D  2EFB               	goto	l963
-   688     071E  120A  118A  2800   	ljmp	start
-   689     0721                     __end_of_main:
+   671     070D  3015               	movlw	21
+   672     070E  1283               	bcf	3,5	;RP0=0, select bank0
+   673     070F  1303               	bcf	3,6	;RP1=0, select bank0
+   674     0710  00DC               	movwf	??_main+2
+   675     0711  304B               	movlw	75
+   676     0712  00DB               	movwf	??_main+1
+   677     0713  30BD               	movlw	189
+   678     0714  00DA               	movwf	??_main
+   679     0715                     u247:
+   680     0715  0BDA               	decfsz	??_main,f
+   681     0716  2F15               	goto	u247
+   682     0717  0BDB               	decfsz	??_main+1,f
+   683     0718  2F15               	goto	u247
+   684     0719  0BDC               	decfsz	??_main+2,f
+   685     071A  2F15               	goto	u247
+   686     071B  2F1C               	nop2
+   687     071C  2EFA               	goto	l999
+   688     071D  120A  118A  2800   	ljmp	start
+   689     0720                     __end_of_main:
    690                           
    691                           	psect	text1
-   692     079D                     __ptext1:	
+   692     079C                     __ptext1:	
    693 ;; *************** function _Matrix_Write_Char *****************
    694 ;; Defined at:
    695 ;;		line 53 in file "MAX7219_DotMatrix.c"
@@ -740,107 +740,107 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
    724 ;; This function uses a non-reentrant model
    725 ;;
    726                           
-   727     079D                     _Matrix_Write_Char:	
+   727     079C                     _Matrix_Write_Char:	
    728                           ;psect for function _Matrix_Write_Char
    729                           
    730                           
    731                           ;incstack = 0
    732                           ; Regs used in _Matrix_Write_Char: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
    733                           ;Matrix_Write_Char@slave stored from wreg
-   734     079D  00FB               	movwf	Matrix_Write_Char@slave
-   735     079E                     l939:
-   736     079E                     l941:
+   734     079C  00FB               	movwf	Matrix_Write_Char@slave
+   735     079D                     l951:
+   736     079D                     l953:
    737                           
    738                           ;MAX7219_DotMatrix.c: 56:     uint8_t font = 5;
-   739     079E  3005               	movlw	5
-   740     079F  00FA               	movwf	Matrix_Write_Char@font
+   739     079D  3005               	movlw	5
+   740     079E  00FA               	movwf	Matrix_Write_Char@font
    741                           
    742                           ;MAX7219_DotMatrix.c: 59:     if(data > 9)
-   743     07A0  300A               	movlw	10
-   744     07A1  0276               	subwf	Matrix_Write_Char@data,w
-   745     07A2  1C03               	skipc
-   746     07A3  2FA5               	goto	u191
-   747     07A4  2FA6               	goto	u190
-   748     07A5                     u191:
-   749     07A5  2FA7               	goto	l945
-   750     07A6                     u190:
-   751     07A6  2FEC               	goto	l117
-   752     07A7                     l945:
+   743     079F  300A               	movlw	10
+   744     07A0  0276               	subwf	Matrix_Write_Char@data,w
+   745     07A1  1C03               	skipc
+   746     07A2  2FA4               	goto	u191
+   747     07A3  2FA5               	goto	u190
+   748     07A4                     u191:
+   749     07A4  2FA6               	goto	l957
+   750     07A5                     u190:
+   751     07A5  2FEB               	goto	l111
+   752     07A6                     l957:
    753                           
    754                           ;MAX7219_DotMatrix.c: 62:     TxByte(slave, col, 0x00);
-   755     07A7  01F3               	clrf	TxByte@col
-   756     07A8  0AF3               	incf	TxByte@col,f
-   757     07A9  01F4               	clrf	TxByte@data
-   758     07AA  087B               	movf	Matrix_Write_Char@slave,w
-   759     07AB  120A  118A  26D5  120A  118A  	fcall	_TxByte
-   760     07B0                     l947:
+   755     07A6  01F3               	clrf	TxByte@col
+   756     07A7  0AF3               	incf	TxByte@col,f
+   757     07A8  01F4               	clrf	TxByte@data
+   758     07A9  087B               	movf	Matrix_Write_Char@slave,w
+   759     07AA  120A  118A  26D4  120A  118A  	fcall	_TxByte
+   760     07AF                     l959:
    761                           
    762                           ;MAX7219_DotMatrix.c: 63:     for(col = 2; col <= font + 1; ++col)
-   763     07B0  3002               	movlw	2
-   764     07B1  00FC               	movwf	Matrix_Write_Char@col
-   765     07B2  2FCF               	goto	l953
-   766     07B3                     l949:
+   763     07AF  3002               	movlw	2
+   764     07B0  00FC               	movwf	Matrix_Write_Char@col
+   765     07B1  2FCE               	goto	l965
+   766     07B2                     l961:
    767                           
    768                           ;MAX7219_DotMatrix.c: 64:         TxByte(slave, col, FONT_7x5[data][col - 2]);
-   769     07B3  087C               	movf	Matrix_Write_Char@col,w
-   770     07B4  00F3               	movwf	TxByte@col
-   771     07B5  3005               	movlw	5
-   772     07B6  00F0               	movwf	___bmul@multiplicand
-   773     07B7  0876               	movf	Matrix_Write_Char@data,w
-   774     07B8  120A  118A  26A9  120A  118A  	fcall	___bmul
-   775     07BD  3E1E               	addlw	(low ((_FONT_7x5| 0+254)))& (0+255)
-   776     07BE  077C               	addwf	Matrix_Write_Char@col,w
-   777     07BF  00F7               	movwf	??_Matrix_Write_Char
-   778     07C0  0877               	movf	??_Matrix_Write_Char,w
-   779     07C1  0084               	movwf	4
-   780     07C2  1383               	bcf	3,7	;select IRP bank0
-   781     07C3  0800               	movf	0,w
-   782     07C4  00F4               	movwf	TxByte@data
-   783     07C5  087B               	movf	Matrix_Write_Char@slave,w
-   784     07C6  120A  118A  26D5  120A  118A  	fcall	_TxByte
-   785     07CB                     l951:
-   786     07CB  3001               	movlw	1
-   787     07CC  00FF               	movwf	btemp+1
-   788     07CD  087F               	movf	btemp+1,w
-   789     07CE  07FC               	addwf	Matrix_Write_Char@col,f
-   790     07CF                     l953:
-   791     07CF  087A               	movf	Matrix_Write_Char@font,w
-   792     07D0  3E01               	addlw	1
-   793     07D1  00F7               	movwf	??_Matrix_Write_Char
-   794     07D2  3000               	movlw	0
-   795     07D3  1803               	skipnc
-   796     07D4  3001               	movlw	1
-   797     07D5  00F8               	movwf	??_Matrix_Write_Char+1
-   798     07D6  0878               	movf	??_Matrix_Write_Char+1,w
-   799     07D7  3A80               	xorlw	128
-   800     07D8  00F9               	movwf	??_Matrix_Write_Char+2
-   801     07D9  3080               	movlw	128
-   802     07DA  0279               	subwf	??_Matrix_Write_Char+2,w
-   803     07DB  1D03               	skipz
-   804     07DC  2FDF               	goto	u205
-   805     07DD  087C               	movf	Matrix_Write_Char@col,w
-   806     07DE  0277               	subwf	??_Matrix_Write_Char,w
-   807     07DF                     u205:
-   808     07DF  1803               	skipnc
-   809     07E0  2FE2               	goto	u201
-   810     07E1  2FE3               	goto	u200
-   811     07E2                     u201:
-   812     07E2  2FB3               	goto	l949
-   813     07E3                     u200:
-   814     07E3                     l955:
+   769     07B2  087C               	movf	Matrix_Write_Char@col,w
+   770     07B3  00F3               	movwf	TxByte@col
+   771     07B4  3005               	movlw	5
+   772     07B5  00F0               	movwf	___bmul@multiplicand
+   773     07B6  0876               	movf	Matrix_Write_Char@data,w
+   774     07B7  120A  118A  26A8  120A  118A  	fcall	___bmul
+   775     07BC  3E1E               	addlw	(low ((_FONT_7x5| 0+254)))& (0+255)
+   776     07BD  077C               	addwf	Matrix_Write_Char@col,w
+   777     07BE  00F7               	movwf	??_Matrix_Write_Char
+   778     07BF  0877               	movf	??_Matrix_Write_Char,w
+   779     07C0  0084               	movwf	4
+   780     07C1  1383               	bcf	3,7	;select IRP bank0
+   781     07C2  0800               	movf	0,w
+   782     07C3  00F4               	movwf	TxByte@data
+   783     07C4  087B               	movf	Matrix_Write_Char@slave,w
+   784     07C5  120A  118A  26D4  120A  118A  	fcall	_TxByte
+   785     07CA                     l963:
+   786     07CA  3001               	movlw	1
+   787     07CB  00FF               	movwf	btemp+1
+   788     07CC  087F               	movf	btemp+1,w
+   789     07CD  07FC               	addwf	Matrix_Write_Char@col,f
+   790     07CE                     l965:
+   791     07CE  087A               	movf	Matrix_Write_Char@font,w
+   792     07CF  3E01               	addlw	1
+   793     07D0  00F7               	movwf	??_Matrix_Write_Char
+   794     07D1  3000               	movlw	0
+   795     07D2  1803               	skipnc
+   796     07D3  3001               	movlw	1
+   797     07D4  00F8               	movwf	??_Matrix_Write_Char+1
+   798     07D5  0878               	movf	??_Matrix_Write_Char+1,w
+   799     07D6  3A80               	xorlw	128
+   800     07D7  00F9               	movwf	??_Matrix_Write_Char+2
+   801     07D8  3080               	movlw	128
+   802     07D9  0279               	subwf	??_Matrix_Write_Char+2,w
+   803     07DA  1D03               	skipz
+   804     07DB  2FDE               	goto	u205
+   805     07DC  087C               	movf	Matrix_Write_Char@col,w
+   806     07DD  0277               	subwf	??_Matrix_Write_Char,w
+   807     07DE                     u205:
+   808     07DE  1803               	skipnc
+   809     07DF  2FE1               	goto	u201
+   810     07E0  2FE2               	goto	u200
+   811     07E1                     u201:
+   812     07E1  2FB2               	goto	l961
+   813     07E2                     u200:
+   814     07E2                     l967:
    815                           
    816                           ;MAX7219_DotMatrix.c: 65:     TxByte(slave, col, 0x00);
-   817     07E3  087C               	movf	Matrix_Write_Char@col,w
-   818     07E4  00F3               	movwf	TxByte@col
-   819     07E5  01F4               	clrf	TxByte@data
-   820     07E6  087B               	movf	Matrix_Write_Char@slave,w
-   821     07E7  120A  118A  26D5  120A  118A  	fcall	_TxByte
-   822     07EC                     l117:
-   823     07EC  0008               	return
-   824     07ED                     __end_of_Matrix_Write_Char:
+   817     07E2  087C               	movf	Matrix_Write_Char@col,w
+   818     07E3  00F3               	movwf	TxByte@col
+   819     07E4  01F4               	clrf	TxByte@data
+   820     07E5  087B               	movf	Matrix_Write_Char@slave,w
+   821     07E6  120A  118A  26D4  120A  118A  	fcall	_TxByte
+   822     07EB                     l111:
+   823     07EB  0008               	return
+   824     07EC                     __end_of_Matrix_Write_Char:
    825                           
    826                           	psect	text2
-   827     06A9                     __ptext2:	
+   827     06A8                     __ptext2:	
    828 ;; *************** function ___bmul *****************
    829 ;; Defined at:
    830 ;;		line 4 in file "C:\Program Files\Microchip\xc8\v2.41\pic\sources\c90\common\Umul8.c"
@@ -872,50 +872,50 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
    856 ;; This function uses a non-reentrant model
    857 ;;
    858                           
-   859     06A9                     ___bmul:	
+   859     06A8                     ___bmul:	
    860                           ;psect for function ___bmul
    861                           
    862                           
    863                           ;incstack = 0
    864                           ; Regs used in ___bmul: [wreg+status,2+status,0+btemp+1]
    865                           ;___bmul@multiplier stored from wreg
-   866     06A9  00F2               	movwf	___bmul@multiplier
-   867     06AA                     l897:
-   868     06AA  01F1               	clrf	___bmul@product
-   869     06AB                     l899:
-   870     06AB  1C72               	btfss	___bmul@multiplier,0
-   871     06AC  2EAE               	goto	u151
-   872     06AD  2EAF               	goto	u150
-   873     06AE                     u151:
-   874     06AE  2EB3               	goto	l903
-   875     06AF                     u150:
-   876     06AF                     l901:
-   877     06AF  0870               	movf	___bmul@multiplicand,w
-   878     06B0  00FF               	movwf	btemp+1
-   879     06B1  087F               	movf	btemp+1,w
-   880     06B2  07F1               	addwf	___bmul@product,f
-   881     06B3                     l903:
-   882     06B3  1003               	clrc
-   883     06B4  0DF0               	rlf	___bmul@multiplicand,f
-   884     06B5                     l905:
-   885     06B5  1003               	clrc
-   886     06B6  0CF2               	rrf	___bmul@multiplier,f
-   887     06B7                     l907:
-   888     06B7  0872               	movf	___bmul@multiplier,w
-   889     06B8  1D03               	btfss	3,2
-   890     06B9  2EBB               	goto	u161
-   891     06BA  2EBC               	goto	u160
-   892     06BB                     u161:
-   893     06BB  2EAB               	goto	l899
-   894     06BC                     u160:
-   895     06BC                     l909:
-   896     06BC  0871               	movf	___bmul@product,w
-   897     06BD                     l255:
-   898     06BD  0008               	return
-   899     06BE                     __end_of___bmul:
+   866     06A8  00F2               	movwf	___bmul@multiplier
+   867     06A9                     l909:
+   868     06A9  01F1               	clrf	___bmul@product
+   869     06AA                     l911:
+   870     06AA  1C72               	btfss	___bmul@multiplier,0
+   871     06AB  2EAD               	goto	u151
+   872     06AC  2EAE               	goto	u150
+   873     06AD                     u151:
+   874     06AD  2EB2               	goto	l915
+   875     06AE                     u150:
+   876     06AE                     l913:
+   877     06AE  0870               	movf	___bmul@multiplicand,w
+   878     06AF  00FF               	movwf	btemp+1
+   879     06B0  087F               	movf	btemp+1,w
+   880     06B1  07F1               	addwf	___bmul@product,f
+   881     06B2                     l915:
+   882     06B2  1003               	clrc
+   883     06B3  0DF0               	rlf	___bmul@multiplicand,f
+   884     06B4                     l917:
+   885     06B4  1003               	clrc
+   886     06B5  0CF2               	rrf	___bmul@multiplier,f
+   887     06B6                     l919:
+   888     06B6  0872               	movf	___bmul@multiplier,w
+   889     06B7  1D03               	btfss	3,2
+   890     06B8  2EBA               	goto	u161
+   891     06B9  2EBB               	goto	u160
+   892     06BA                     u161:
+   893     06BA  2EAA               	goto	l911
+   894     06BB                     u160:
+   895     06BB                     l921:
+   896     06BB  0871               	movf	___bmul@product,w
+   897     06BC                     l251:
+   898     06BC  0008               	return
+   899     06BD                     __end_of___bmul:
    900                           
    901                           	psect	text3
-   902     075B                     __ptext3:	
+   902     075A                     __ptext3:	
    903 ;; *************** function _Matrix_Init *****************
    904 ;; Defined at:
    905 ;;		line 20 in file "MAX7219_DotMatrix.c"
@@ -947,85 +947,85 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
    931 ;; This function uses a non-reentrant model
    932 ;;
    933                           
-   934     075B                     _Matrix_Init:	
+   934     075A                     _Matrix_Init:	
    935                           ;psect for function _Matrix_Init
    936                           
-   937     075B                     l913:	
+   937     075A                     l925:	
    938                           ;incstack = 0
    939                           ; Regs used in _Matrix_Init: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
    940                           
    941                           
    942                           ;MAX7219_DotMatrix.c: 23:     SPI_Master_Init();
-   943     075B  120A  118A  2683  120A  118A  	fcall	_SPI_Master_Init
-   944     0760                     l915:
+   943     075A  120A  118A  2682  120A  118A  	fcall	_SPI_Master_Init
+   944     075F                     l927:
    945                           
    946                           ;MAX7219_DotMatrix.c: 26:     for(uint8_t i = 1; i <= 1; ++i)
-   947     0760  01F6               	clrf	Matrix_Init@i
-   948     0761  0AF6               	incf	Matrix_Init@i,f
-   949     0762                     l921:
+   947     075F  01F6               	clrf	Matrix_Init@i
+   948     0760  0AF6               	incf	Matrix_Init@i,f
+   949     0761                     l933:
    950                           
    951                           ;MAX7219_DotMatrix.c: 27:     {;MAX7219_DotMatrix.c: 29:         TxByte(i, 0x09, 0x00);
-   952     0762  3009               	movlw	9
-   953     0763  00F3               	movwf	TxByte@col
-   954     0764  01F4               	clrf	TxByte@data
-   955     0765  0876               	movf	Matrix_Init@i,w
-   956     0766  120A  118A  26D5  120A  118A  	fcall	_TxByte
+   952     0761  3009               	movlw	9
+   953     0762  00F3               	movwf	TxByte@col
+   954     0763  01F4               	clrf	TxByte@data
+   955     0764  0876               	movf	Matrix_Init@i,w
+   956     0765  120A  118A  26D4  120A  118A  	fcall	_TxByte
    957                           
    958                           ;MAX7219_DotMatrix.c: 32:         TxByte(i, 0x0A, 0x08);
-   959     076B  300A               	movlw	10
-   960     076C  00F3               	movwf	TxByte@col
-   961     076D  3008               	movlw	8
-   962     076E  00F4               	movwf	TxByte@data
-   963     076F  0876               	movf	Matrix_Init@i,w
-   964     0770  120A  118A  26D5  120A  118A  	fcall	_TxByte
+   959     076A  300A               	movlw	10
+   960     076B  00F3               	movwf	TxByte@col
+   961     076C  3008               	movlw	8
+   962     076D  00F4               	movwf	TxByte@data
+   963     076E  0876               	movf	Matrix_Init@i,w
+   964     076F  120A  118A  26D4  120A  118A  	fcall	_TxByte
    965                           
    966                           ;MAX7219_DotMatrix.c: 35:         TxByte(i, 0x0B, 0x07);
-   967     0775  300B               	movlw	11
-   968     0776  00F3               	movwf	TxByte@col
-   969     0777  3007               	movlw	7
-   970     0778  00F4               	movwf	TxByte@data
-   971     0779  0876               	movf	Matrix_Init@i,w
-   972     077A  120A  118A  26D5  120A  118A  	fcall	_TxByte
+   967     0774  300B               	movlw	11
+   968     0775  00F3               	movwf	TxByte@col
+   969     0776  3007               	movlw	7
+   970     0777  00F4               	movwf	TxByte@data
+   971     0778  0876               	movf	Matrix_Init@i,w
+   972     0779  120A  118A  26D4  120A  118A  	fcall	_TxByte
    973                           
    974                           ;MAX7219_DotMatrix.c: 38:         TxByte(i, 0x0C, 0x01);
-   975     077F  300C               	movlw	12
-   976     0780  00F3               	movwf	TxByte@col
-   977     0781  01F4               	clrf	TxByte@data
-   978     0782  0AF4               	incf	TxByte@data,f
-   979     0783  0876               	movf	Matrix_Init@i,w
-   980     0784  120A  118A  26D5  120A  118A  	fcall	_TxByte
+   975     077E  300C               	movlw	12
+   976     077F  00F3               	movwf	TxByte@col
+   977     0780  01F4               	clrf	TxByte@data
+   978     0781  0AF4               	incf	TxByte@data,f
+   979     0782  0876               	movf	Matrix_Init@i,w
+   980     0783  120A  118A  26D4  120A  118A  	fcall	_TxByte
    981                           
    982                           ;MAX7219_DotMatrix.c: 41:         TxByte(i, 0x0F, 0x00);
-   983     0789  300F               	movlw	15
-   984     078A  00F3               	movwf	TxByte@col
-   985     078B  01F4               	clrf	TxByte@data
-   986     078C  0876               	movf	Matrix_Init@i,w
-   987     078D  120A  118A  26D5  120A  118A  	fcall	_TxByte
-   988     0792                     l923:
+   983     0788  300F               	movlw	15
+   984     0789  00F3               	movwf	TxByte@col
+   985     078A  01F4               	clrf	TxByte@data
+   986     078B  0876               	movf	Matrix_Init@i,w
+   987     078C  120A  118A  26D4  120A  118A  	fcall	_TxByte
+   988     0791                     l935:
    989                           
    990                           ;MAX7219_DotMatrix.c: 42:     }
-   991     0792  3001               	movlw	1
-   992     0793  00FF               	movwf	btemp+1
-   993     0794  087F               	movf	btemp+1,w
-   994     0795  07F6               	addwf	Matrix_Init@i,f
-   995     0796                     l925:
-   996     0796  3002               	movlw	2
-   997     0797  0276               	subwf	Matrix_Init@i,w
-   998     0798  1C03               	skipc
-   999     0799  2F9B               	goto	u171
-  1000     079A  2F9C               	goto	u170
-  1001     079B                     u171:
-  1002     079B  2F62               	goto	l921
-  1003     079C                     u170:
-  1004     079C                     l108:
-  1005     079C  0008               	return
-  1006     079D                     __end_of_Matrix_Init:
+   991     0791  3001               	movlw	1
+   992     0792  00FF               	movwf	btemp+1
+   993     0793  087F               	movf	btemp+1,w
+   994     0794  07F6               	addwf	Matrix_Init@i,f
+   995     0795                     l937:
+   996     0795  3002               	movlw	2
+   997     0796  0276               	subwf	Matrix_Init@i,w
+   998     0797  1C03               	skipc
+   999     0798  2F9A               	goto	u171
+  1000     0799  2F9B               	goto	u170
+  1001     079A                     u171:
+  1002     079A  2F61               	goto	l933
+  1003     079B                     u170:
+  1004     079B                     l102:
+  1005     079B  0008               	return
+  1006     079C                     __end_of_Matrix_Init:
   1007                           
   1008                           	psect	text4
-  1009     0683                     __ptext4:	
+  1009     0682                     __ptext4:	
   1010 ;; *************** function _SPI_Master_Init *****************
   1011 ;; Defined at:
-  1012 ;;		line 4 in file "PIC16F877A_SPI.c"
+  1012 ;;		line 6 in file "PIC16F877A_SPI.c"
   1013 ;; Parameters:    Size  Location     Type
   1014 ;;		None
   1015 ;; Auto vars:     Size  Location     Type
@@ -1052,72 +1052,72 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
   1036 ;; This function uses a non-reentrant model
   1037 ;;
   1038                           
-  1039     0683                     _SPI_Master_Init:	
+  1039     0682                     _SPI_Master_Init:	
   1040                           ;psect for function _SPI_Master_Init
   1041                           
-  1042     0683                     l753:	
+  1042     0682                     l749:	
   1043                           ;incstack = 0
   1044                           ; Regs used in _SPI_Master_Init: [status,2]
   1045                           
   1046                           
-  1047                           ;PIC16F877A_SPI.c: 7:     TRISD = 0x00;
-  1048     0683  1683               	bsf	3,5	;RP0=1, select bank1
-  1049     0684  1303               	bcf	3,6	;RP1=0, select bank1
-  1050     0685  0188               	clrf	8	;volatile
-  1051     0686                     l755:
+  1047                           ;PIC16F877A_SPI.c: 9:     TRISD = 0x00;
+  1048     0682  1683               	bsf	3,5	;RP0=1, select bank1
+  1049     0683  1303               	bcf	3,6	;RP1=0, select bank1
+  1050     0684  0188               	clrf	8	;volatile
+  1051     0685                     l751:
   1052                           
-  1053                           ;PIC16F877A_SPI.c: 9:     SSPM3 = 0;
-  1054     0686  1283               	bcf	3,5	;RP0=0, select bank0
-  1055     0687  1303               	bcf	3,6	;RP1=0, select bank0
-  1056     0688  1194               	bcf	20,3	;volatile
-  1057     0689                     l757:
+  1053                           ;PIC16F877A_SPI.c: 11:     SSPM3 = 0;
+  1054     0685  1283               	bcf	3,5	;RP0=0, select bank0
+  1055     0686  1303               	bcf	3,6	;RP1=0, select bank0
+  1056     0687  1194               	bcf	20,3	;volatile
+  1057     0688                     l753:
   1058                           
-  1059                           ;PIC16F877A_SPI.c: 10:     SSPM2 = 0;
-  1060     0689  1114               	bcf	20,2	;volatile
-  1061     068A                     l759:
+  1059                           ;PIC16F877A_SPI.c: 12:     SSPM2 = 0;
+  1060     0688  1114               	bcf	20,2	;volatile
+  1061     0689                     l755:
   1062                           
-  1063                           ;PIC16F877A_SPI.c: 11:     SSPM1 = 0;
-  1064     068A  1094               	bcf	20,1	;volatile
-  1065     068B                     l761:
+  1063                           ;PIC16F877A_SPI.c: 13:     SSPM1 = 0;
+  1064     0689  1094               	bcf	20,1	;volatile
+  1065     068A                     l757:
   1066                           
-  1067                           ;PIC16F877A_SPI.c: 12:     SSPM0 = 0;
-  1068     068B  1014               	bcf	20,0	;volatile
-  1069     068C                     l763:
+  1067                           ;PIC16F877A_SPI.c: 14:     SSPM0 = 0;
+  1068     068A  1014               	bcf	20,0	;volatile
+  1069     068B                     l759:
   1070                           
-  1071                           ;PIC16F877A_SPI.c: 14:     SSPEN = 1;
-  1072     068C  1694               	bsf	20,5	;volatile
-  1073     068D                     l765:
+  1071                           ;PIC16F877A_SPI.c: 16:     SSPEN = 1;
+  1072     068B  1694               	bsf	20,5	;volatile
+  1073     068C                     l761:
   1074                           
-  1075                           ;PIC16F877A_SPI.c: 16:     CKP = 0;
-  1076     068D  1214               	bcf	20,4	;volatile
-  1077     068E                     l767:
+  1075                           ;PIC16F877A_SPI.c: 18:     CKP = 0;
+  1076     068C  1214               	bcf	20,4	;volatile
+  1077     068D                     l763:
   1078                           
-  1079                           ;PIC16F877A_SPI.c: 17:     CKE = 0;
-  1080     068E  1683               	bsf	3,5	;RP0=1, select bank1
-  1081     068F  1303               	bcf	3,6	;RP1=0, select bank1
-  1082     0690  1314               	bcf	20,6	;volatile
-  1083     0691                     l769:
+  1079                           ;PIC16F877A_SPI.c: 19:     CKE = 0;
+  1080     068D  1683               	bsf	3,5	;RP0=1, select bank1
+  1081     068E  1303               	bcf	3,6	;RP1=0, select bank1
+  1082     068F  1314               	bcf	20,6	;volatile
+  1083     0690                     l765:
   1084                           
-  1085                           ;PIC16F877A_SPI.c: 19:     SMP = 0;
-  1086     0691  1394               	bcf	20,7	;volatile
-  1087     0692                     l771:
+  1085                           ;PIC16F877A_SPI.c: 21:     SMP = 0;
+  1086     0690  1394               	bcf	20,7	;volatile
+  1087     0691                     l767:
   1088                           
-  1089                           ;PIC16F877A_SPI.c: 21:     TRISC5 = 0;
-  1090     0692  1287               	bcf	7,5	;volatile
-  1091     0693                     l773:
+  1089                           ;PIC16F877A_SPI.c: 23:     TRISC5 = 0;
+  1090     0691  1287               	bcf	7,5	;volatile
+  1091     0692                     l769:
   1092                           
-  1093                           ;PIC16F877A_SPI.c: 22:     TRISC4 = 1;
-  1094     0693  1607               	bsf	7,4	;volatile
-  1095     0694                     l775:
+  1093                           ;PIC16F877A_SPI.c: 24:     TRISC4 = 1;
+  1094     0692  1607               	bsf	7,4	;volatile
+  1095     0693                     l771:
   1096                           
-  1097                           ;PIC16F877A_SPI.c: 23:     TRISC3 = 0;
-  1098     0694  1187               	bcf	7,3	;volatile
-  1099     0695                     l55:
-  1100     0695  0008               	return
-  1101     0696                     __end_of_SPI_Master_Init:
+  1097                           ;PIC16F877A_SPI.c: 25:     TRISC3 = 0;
+  1098     0693  1187               	bcf	7,3	;volatile
+  1099     0694                     l53:
+  1100     0694  0008               	return
+  1101     0695                     __end_of_SPI_Master_Init:
   1102                           
   1103                           	psect	text5
-  1104     06BE                     __ptext5:	
+  1104     06BD                     __ptext5:	
   1105 ;; *************** function _Matrix_Clear *****************
   1106 ;; Defined at:
   1107 ;;		line 46 in file "MAX7219_DotMatrix.c"
@@ -1149,48 +1149,48 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
   1133 ;; This function uses a non-reentrant model
   1134 ;;
   1135                           
-  1136     06BE                     _Matrix_Clear:	
+  1136     06BD                     _Matrix_Clear:	
   1137                           ;psect for function _Matrix_Clear
   1138                           
   1139                           
   1140                           ;incstack = 0
   1141                           ; Regs used in _Matrix_Clear: [wreg-fsr0h+status,2+status,0+btemp+1+pclath+cstack]
   1142                           ;Matrix_Clear@slave stored from wreg
-  1143     06BE  00F6               	movwf	Matrix_Clear@slave
-  1144     06BF                     l927:
+  1143     06BD  00F6               	movwf	Matrix_Clear@slave
+  1144     06BE                     l939:
   1145                           
   1146                           ;MAX7219_DotMatrix.c: 46: void Matrix_Clear(uint8_t slave);MAX7219_DotMatrix.c: 47: {;MA
       +                          X7219_DotMatrix.c: 48:     for(uint8_t j = 1; j < 9; ++j)
-  1147     06BF  01F7               	clrf	Matrix_Clear@j
-  1148     06C0  0AF7               	incf	Matrix_Clear@j,f
-  1149     06C1                     l933:
+  1147     06BE  01F7               	clrf	Matrix_Clear@j
+  1148     06BF  0AF7               	incf	Matrix_Clear@j,f
+  1149     06C0                     l945:
   1150                           
   1151                           ;MAX7219_DotMatrix.c: 49:         TxByte(slave, j, 0x00);
-  1152     06C1  0877               	movf	Matrix_Clear@j,w
-  1153     06C2  00F3               	movwf	TxByte@col
-  1154     06C3  01F4               	clrf	TxByte@data
-  1155     06C4  0876               	movf	Matrix_Clear@slave,w
-  1156     06C5  120A  118A  26D5  120A  118A  	fcall	_TxByte
-  1157     06CA                     l935:
-  1158     06CA  3001               	movlw	1
-  1159     06CB  00FF               	movwf	btemp+1
-  1160     06CC  087F               	movf	btemp+1,w
-  1161     06CD  07F7               	addwf	Matrix_Clear@j,f
-  1162     06CE                     l937:
-  1163     06CE  3009               	movlw	9
-  1164     06CF  0277               	subwf	Matrix_Clear@j,w
-  1165     06D0  1C03               	skipc
-  1166     06D1  2ED3               	goto	u181
-  1167     06D2  2ED4               	goto	u180
-  1168     06D3                     u181:
-  1169     06D3  2EC1               	goto	l933
-  1170     06D4                     u180:
-  1171     06D4                     l113:
-  1172     06D4  0008               	return
-  1173     06D5                     __end_of_Matrix_Clear:
+  1152     06C0  0877               	movf	Matrix_Clear@j,w
+  1153     06C1  00F3               	movwf	TxByte@col
+  1154     06C2  01F4               	clrf	TxByte@data
+  1155     06C3  0876               	movf	Matrix_Clear@slave,w
+  1156     06C4  120A  118A  26D4  120A  118A  	fcall	_TxByte
+  1157     06C9                     l947:
+  1158     06C9  3001               	movlw	1
+  1159     06CA  00FF               	movwf	btemp+1
+  1160     06CB  087F               	movf	btemp+1,w
+  1161     06CC  07F7               	addwf	Matrix_Clear@j,f
+  1162     06CD                     l949:
+  1163     06CD  3009               	movlw	9
+  1164     06CE  0277               	subwf	Matrix_Clear@j,w
+  1165     06CF  1C03               	skipc
+  1166     06D0  2ED2               	goto	u181
+  1167     06D1  2ED3               	goto	u180
+  1168     06D2                     u181:
+  1169     06D2  2EC0               	goto	l945
+  1170     06D3                     u180:
+  1171     06D3                     l107:
+  1172     06D3  0008               	return
+  1173     06D4                     __end_of_Matrix_Clear:
   1174                           
   1175                           	psect	text6
-  1176     06D5                     __ptext6:	
+  1176     06D4                     __ptext6:	
   1177 ;; *************** function _TxByte *****************
   1178 ;; Defined at:
   1179 ;;		line 6 in file "MAX7219_DotMatrix.c"
@@ -1224,295 +1224,296 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
   1207 ;;		_Matrix_Init
   1208 ;;		_Matrix_Clear
   1209 ;;		_Matrix_Write_Char
-  1210 ;; This function uses a non-reentrant model
-  1211 ;;
-  1212                           
-  1213     06D5                     _TxByte:	
-  1214                           ;psect for function _TxByte
-  1215                           
+  1210 ;;		_Matrix_Intensity
+  1211 ;; This function uses a non-reentrant model
+  1212 ;;
+  1213                           
+  1214     06D4                     _TxByte:	
+  1215                           ;psect for function _TxByte
   1216                           
-  1217                           ;incstack = 0
-  1218                           ; Regs used in _TxByte: [wreg-fsr0h+status,2+status,0+pclath+cstack]
-  1219                           ;TxByte@slave stored from wreg
-  1220     06D5  00F5               	movwf	TxByte@slave
-  1221     06D6                     l889:
-  1222                           
-  1223                           ;MAX7219_DotMatrix.c: 6: static void TxByte(uint8_t slave, uint8_t col, uint8_t data);MA
+  1217                           
+  1218                           ;incstack = 0
+  1219                           ; Regs used in _TxByte: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+  1220                           ;TxByte@slave stored from wreg
+  1221     06D4  00F5               	movwf	TxByte@slave
+  1222     06D5                     l901:
+  1223                           
+  1224                           ;MAX7219_DotMatrix.c: 6: static void TxByte(uint8_t slave, uint8_t col, uint8_t data);MA
       +                          X7219_DotMatrix.c: 7: {;MAX7219_DotMatrix.c: 9:     SS_Enable(slave);
-  1224     06D6  0875               	movf	TxByte@slave,w
-  1225     06D7  120A  118A  2673  120A  118A  	fcall	_SS_Enable
-  1226     06DC                     l891:
-  1227                           
-  1228                           ;MAX7219_DotMatrix.c: 11:     SPI_Tx_Byte(col);
-  1229     06DC  0873               	movf	TxByte@col,w
-  1230     06DD  120A  118A  265C  120A  118A  	fcall	_SPI_Tx_Byte
-  1231     06E2                     l893:
-  1232                           
-  1233                           ;MAX7219_DotMatrix.c: 12:     SPI_Tx_Byte(data);
-  1234     06E2  0874               	movf	TxByte@data,w
-  1235     06E3  120A  118A  265C  120A  118A  	fcall	_SPI_Tx_Byte
-  1236     06E8                     l895:
-  1237                           
-  1238                           ;MAX7219_DotMatrix.c: 14:     SS_Disable(slave);
-  1239     06E8  0875               	movf	TxByte@slave,w
-  1240     06E9  120A  118A  2667  120A  118A  	fcall	_SS_Disable
-  1241     06EE                     l103:
-  1242     06EE  0008               	return
-  1243     06EF                     __end_of_TxByte:
-  1244                           
-  1245                           	psect	text7
-  1246     0673                     __ptext7:	
-  1247 ;; *************** function _SS_Enable *****************
-  1248 ;; Defined at:
-  1249 ;;		line 62 in file "PIC16F877A_SPI.c"
-  1250 ;; Parameters:    Size  Location     Type
-  1251 ;;  slave           1    wreg     unsigned char 
-  1252 ;; Auto vars:     Size  Location     Type
-  1253 ;;  slave           1    0[COMMON] unsigned char 
-  1254 ;; Return value:  Size  Location     Type
-  1255 ;;                  1    wreg      void 
-  1256 ;; Registers used:
-  1257 ;;		wreg, fsr0l, fsr0h, status,2, status,0
-  1258 ;; Tracked objects:
-  1259 ;;		On entry : 0/0
-  1260 ;;		On exit  : 0/0
-  1261 ;;		Unchanged: 0/0
-  1262 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1263 ;;      Params:         0       0       0       0       0
-  1264 ;;      Locals:         1       0       0       0       0
-  1265 ;;      Temps:          0       0       0       0       0
-  1266 ;;      Totals:         1       0       0       0       0
-  1267 ;;Total ram usage:        1 bytes
-  1268 ;; Hardware stack levels used: 1
-  1269 ;; This function calls:
-  1270 ;;		Nothing
-  1271 ;; This function is called by:
-  1272 ;;		_TxByte
-  1273 ;; This function uses a non-reentrant model
-  1274 ;;
-  1275                           
-  1276     0673                     _SS_Enable:	
-  1277                           ;psect for function _SS_Enable
-  1278                           
+  1225     06D5  0875               	movf	TxByte@slave,w
+  1226     06D6  120A  118A  2672  120A  118A  	fcall	_SS_Enable
+  1227     06DB                     l903:
+  1228                           
+  1229                           ;MAX7219_DotMatrix.c: 11:     SPI_Tx_Byte(col);
+  1230     06DB  0873               	movf	TxByte@col,w
+  1231     06DC  120A  118A  265B  120A  118A  	fcall	_SPI_Tx_Byte
+  1232     06E1                     l905:
+  1233                           
+  1234                           ;MAX7219_DotMatrix.c: 12:     SPI_Tx_Byte(data);
+  1235     06E1  0874               	movf	TxByte@data,w
+  1236     06E2  120A  118A  265B  120A  118A  	fcall	_SPI_Tx_Byte
+  1237     06E7                     l907:
+  1238                           
+  1239                           ;MAX7219_DotMatrix.c: 14:     SS_Disable(slave);
+  1240     06E7  0875               	movf	TxByte@slave,w
+  1241     06E8  120A  118A  2666  120A  118A  	fcall	_SS_Disable
+  1242     06ED                     l97:
+  1243     06ED  0008               	return
+  1244     06EE                     __end_of_TxByte:
+  1245                           
+  1246                           	psect	text7
+  1247     0672                     __ptext7:	
+  1248 ;; *************** function _SS_Enable *****************
+  1249 ;; Defined at:
+  1250 ;;		line 64 in file "PIC16F877A_SPI.c"
+  1251 ;; Parameters:    Size  Location     Type
+  1252 ;;  slave           1    wreg     unsigned char 
+  1253 ;; Auto vars:     Size  Location     Type
+  1254 ;;  slave           1    0[COMMON] unsigned char 
+  1255 ;; Return value:  Size  Location     Type
+  1256 ;;                  1    wreg      void 
+  1257 ;; Registers used:
+  1258 ;;		wreg, fsr0l, fsr0h, status,2, status,0
+  1259 ;; Tracked objects:
+  1260 ;;		On entry : 0/0
+  1261 ;;		On exit  : 0/0
+  1262 ;;		Unchanged: 0/0
+  1263 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1264 ;;      Params:         0       0       0       0       0
+  1265 ;;      Locals:         1       0       0       0       0
+  1266 ;;      Temps:          0       0       0       0       0
+  1267 ;;      Totals:         1       0       0       0       0
+  1268 ;;Total ram usage:        1 bytes
+  1269 ;; Hardware stack levels used: 1
+  1270 ;; This function calls:
+  1271 ;;		Nothing
+  1272 ;; This function is called by:
+  1273 ;;		_TxByte
+  1274 ;; This function uses a non-reentrant model
+  1275 ;;
+  1276                           
+  1277     0672                     _SS_Enable:	
+  1278                           ;psect for function _SS_Enable
   1279                           
-  1280                           ;incstack = 0
-  1281                           ; Regs used in _SS_Enable: [wreg-fsr0h+status,2+status,0]
-  1282                           ;SS_Enable@slave stored from wreg
-  1283     0673  00F0               	movwf	SS_Enable@slave
-  1284     0674                     l883:
-  1285                           
-  1286                           ;PIC16F877A_SPI.c: 62: void SS_Enable(uint8_t slave);PIC16F877A_SPI.c: 63: {;PIC16F877A_
-      +                          SPI.c: 64:     if(slave < 1)
-  1287     0674  0870               	movf	SS_Enable@slave,w
-  1288     0675  1D03               	btfss	3,2
-  1289     0676  2E78               	goto	u141
-  1290     0677  2E79               	goto	u140
-  1291     0678                     u141:
-  1292     0678  2E7A               	goto	l887
-  1293     0679                     u140:
-  1294     0679  2E82               	goto	l62
-  1295     067A                     l887:
-  1296                           
-  1297                           ;PIC16F877A_SPI.c: 66:     PORTD = ~SS_pin[slave - 1];
-  1298     067A  0870               	movf	SS_Enable@slave,w
-  1299     067B  3E51               	addlw	(low ((_SS_pin| 0+255)))& (0+255)
-  1300     067C  0084               	movwf	4
-  1301     067D  1383               	bcf	3,7	;select IRP bank0
-  1302     067E  0900               	comf	0,w
-  1303     067F  1283               	bcf	3,5	;RP0=0, select bank0
-  1304     0680  1303               	bcf	3,6	;RP1=0, select bank0
-  1305     0681  0088               	movwf	8	;volatile
-  1306     0682                     l62:
-  1307     0682  0008               	return
-  1308     0683                     __end_of_SS_Enable:
-  1309                           
-  1310                           	psect	text8
-  1311     0667                     __ptext8:	
-  1312 ;; *************** function _SS_Disable *****************
-  1313 ;; Defined at:
-  1314 ;;		line 70 in file "PIC16F877A_SPI.c"
-  1315 ;; Parameters:    Size  Location     Type
-  1316 ;;  slave           1    wreg     unsigned char 
-  1317 ;; Auto vars:     Size  Location     Type
-  1318 ;;  slave           1    0[COMMON] unsigned char 
-  1319 ;; Return value:  Size  Location     Type
-  1320 ;;                  1    wreg      void 
-  1321 ;; Registers used:
-  1322 ;;		wreg, status,2, status,0
-  1323 ;; Tracked objects:
-  1324 ;;		On entry : 0/0
-  1325 ;;		On exit  : 0/0
-  1326 ;;		Unchanged: 0/0
-  1327 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1328 ;;      Params:         0       0       0       0       0
-  1329 ;;      Locals:         1       0       0       0       0
-  1330 ;;      Temps:          0       0       0       0       0
-  1331 ;;      Totals:         1       0       0       0       0
-  1332 ;;Total ram usage:        1 bytes
-  1333 ;; Hardware stack levels used: 1
-  1334 ;; This function calls:
-  1335 ;;		Nothing
-  1336 ;; This function is called by:
-  1337 ;;		_TxByte
-  1338 ;; This function uses a non-reentrant model
-  1339 ;;
-  1340                           
-  1341     0667                     _SS_Disable:	
-  1342                           ;psect for function _SS_Disable
-  1343                           
+  1280                           
+  1281                           ;incstack = 0
+  1282                           ; Regs used in _SS_Enable: [wreg-fsr0h+status,2+status,0]
+  1283                           ;SS_Enable@slave stored from wreg
+  1284     0672  00F0               	movwf	SS_Enable@slave
+  1285     0673                     l895:
+  1286                           
+  1287                           ;PIC16F877A_SPI.c: 64: void SS_Enable(uint8_t slave);PIC16F877A_SPI.c: 65: {;PIC16F877A_
+      +                          SPI.c: 66:     if(slave < 1)
+  1288     0673  0870               	movf	SS_Enable@slave,w
+  1289     0674  1D03               	btfss	3,2
+  1290     0675  2E77               	goto	u141
+  1291     0676  2E78               	goto	u140
+  1292     0677                     u141:
+  1293     0677  2E79               	goto	l899
+  1294     0678                     u140:
+  1295     0678  2E81               	goto	l60
+  1296     0679                     l899:
+  1297                           
+  1298                           ;PIC16F877A_SPI.c: 68:     PORTD = ~SS_pin[slave - 1];
+  1299     0679  0870               	movf	SS_Enable@slave,w
+  1300     067A  3E51               	addlw	(low ((_SS_pin| 0+255)))& (0+255)
+  1301     067B  0084               	movwf	4
+  1302     067C  1383               	bcf	3,7	;select IRP bank0
+  1303     067D  0900               	comf	0,w
+  1304     067E  1283               	bcf	3,5	;RP0=0, select bank0
+  1305     067F  1303               	bcf	3,6	;RP1=0, select bank0
+  1306     0680  0088               	movwf	8	;volatile
+  1307     0681                     l60:
+  1308     0681  0008               	return
+  1309     0682                     __end_of_SS_Enable:
+  1310                           
+  1311                           	psect	text8
+  1312     0666                     __ptext8:	
+  1313 ;; *************** function _SS_Disable *****************
+  1314 ;; Defined at:
+  1315 ;;		line 72 in file "PIC16F877A_SPI.c"
+  1316 ;; Parameters:    Size  Location     Type
+  1317 ;;  slave           1    wreg     unsigned char 
+  1318 ;; Auto vars:     Size  Location     Type
+  1319 ;;  slave           1    0[COMMON] unsigned char 
+  1320 ;; Return value:  Size  Location     Type
+  1321 ;;                  1    wreg      void 
+  1322 ;; Registers used:
+  1323 ;;		wreg, status,2, status,0
+  1324 ;; Tracked objects:
+  1325 ;;		On entry : 0/0
+  1326 ;;		On exit  : 0/0
+  1327 ;;		Unchanged: 0/0
+  1328 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1329 ;;      Params:         0       0       0       0       0
+  1330 ;;      Locals:         1       0       0       0       0
+  1331 ;;      Temps:          0       0       0       0       0
+  1332 ;;      Totals:         1       0       0       0       0
+  1333 ;;Total ram usage:        1 bytes
+  1334 ;; Hardware stack levels used: 1
+  1335 ;; This function calls:
+  1336 ;;		Nothing
+  1337 ;; This function is called by:
+  1338 ;;		_TxByte
+  1339 ;; This function uses a non-reentrant model
+  1340 ;;
+  1341                           
+  1342     0666                     _SS_Disable:	
+  1343                           ;psect for function _SS_Disable
   1344                           
-  1345                           ;incstack = 0
-  1346                           ; Regs used in _SS_Disable: [wreg+status,2+status,0]
-  1347                           ;SS_Disable@slave stored from wreg
-  1348     0667  00F0               	movwf	SS_Disable@slave
-  1349     0668                     l741:
-  1350                           
-  1351                           ;PIC16F877A_SPI.c: 70: void SS_Disable(uint8_t slave);PIC16F877A_SPI.c: 71: {;PIC16F877A
-      +                          _SPI.c: 72:     if(slave < 1)
-  1352     0668  0870               	movf	SS_Disable@slave,w
-  1353     0669  1D03               	btfss	3,2
-  1354     066A  2E6C               	goto	u21
-  1355     066B  2E6D               	goto	u20
-  1356     066C                     u21:
-  1357     066C  2E6E               	goto	l745
-  1358     066D                     u20:
-  1359     066D  2E72               	goto	l66
-  1360     066E                     l745:
-  1361                           
-  1362                           ;PIC16F877A_SPI.c: 74:     PORTD = 0xFF;
-  1363     066E  30FF               	movlw	255
-  1364     066F  1283               	bcf	3,5	;RP0=0, select bank0
-  1365     0670  1303               	bcf	3,6	;RP1=0, select bank0
-  1366     0671  0088               	movwf	8	;volatile
-  1367     0672                     l66:
-  1368     0672  0008               	return
-  1369     0673                     __end_of_SS_Disable:
-  1370                           
-  1371                           	psect	text9
-  1372     065C                     __ptext9:	
-  1373 ;; *************** function _SPI_Tx_Byte *****************
-  1374 ;; Defined at:
-  1375 ;;		line 78 in file "PIC16F877A_SPI.c"
-  1376 ;; Parameters:    Size  Location     Type
-  1377 ;;  data            1    wreg     unsigned char 
-  1378 ;; Auto vars:     Size  Location     Type
-  1379 ;;  data            1    0[COMMON] unsigned char 
-  1380 ;; Return value:  Size  Location     Type
-  1381 ;;                  1    wreg      void 
-  1382 ;; Registers used:
-  1383 ;;		wreg
-  1384 ;; Tracked objects:
-  1385 ;;		On entry : 0/0
-  1386 ;;		On exit  : 0/0
-  1387 ;;		Unchanged: 0/0
-  1388 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
-  1389 ;;      Params:         0       0       0       0       0
-  1390 ;;      Locals:         1       0       0       0       0
-  1391 ;;      Temps:          0       0       0       0       0
-  1392 ;;      Totals:         1       0       0       0       0
-  1393 ;;Total ram usage:        1 bytes
-  1394 ;; Hardware stack levels used: 1
-  1395 ;; This function calls:
-  1396 ;;		Nothing
-  1397 ;; This function is called by:
-  1398 ;;		_TxByte
-  1399 ;;		_SPI_Tx_String
-  1400 ;; This function uses a non-reentrant model
-  1401 ;;
-  1402                           
-  1403     065C                     _SPI_Tx_Byte:	
-  1404                           ;psect for function _SPI_Tx_Byte
-  1405                           
+  1345                           
+  1346                           ;incstack = 0
+  1347                           ; Regs used in _SS_Disable: [wreg+status,2+status,0]
+  1348                           ;SS_Disable@slave stored from wreg
+  1349     0666  00F0               	movwf	SS_Disable@slave
+  1350     0667                     l737:
+  1351                           
+  1352                           ;PIC16F877A_SPI.c: 72: void SS_Disable(uint8_t slave);PIC16F877A_SPI.c: 73: {;PIC16F877A
+      +                          _SPI.c: 74:     if(slave < 1)
+  1353     0667  0870               	movf	SS_Disable@slave,w
+  1354     0668  1D03               	btfss	3,2
+  1355     0669  2E6B               	goto	u21
+  1356     066A  2E6C               	goto	u20
+  1357     066B                     u21:
+  1358     066B  2E6D               	goto	l741
+  1359     066C                     u20:
+  1360     066C  2E71               	goto	l64
+  1361     066D                     l741:
+  1362                           
+  1363                           ;PIC16F877A_SPI.c: 76:     PORTD = 0xFF;
+  1364     066D  30FF               	movlw	255
+  1365     066E  1283               	bcf	3,5	;RP0=0, select bank0
+  1366     066F  1303               	bcf	3,6	;RP1=0, select bank0
+  1367     0670  0088               	movwf	8	;volatile
+  1368     0671                     l64:
+  1369     0671  0008               	return
+  1370     0672                     __end_of_SS_Disable:
+  1371                           
+  1372                           	psect	text9
+  1373     065B                     __ptext9:	
+  1374 ;; *************** function _SPI_Tx_Byte *****************
+  1375 ;; Defined at:
+  1376 ;;		line 80 in file "PIC16F877A_SPI.c"
+  1377 ;; Parameters:    Size  Location     Type
+  1378 ;;  data            1    wreg     unsigned char 
+  1379 ;; Auto vars:     Size  Location     Type
+  1380 ;;  data            1    0[COMMON] unsigned char 
+  1381 ;; Return value:  Size  Location     Type
+  1382 ;;                  1    wreg      void 
+  1383 ;; Registers used:
+  1384 ;;		wreg
+  1385 ;; Tracked objects:
+  1386 ;;		On entry : 0/0
+  1387 ;;		On exit  : 0/0
+  1388 ;;		Unchanged: 0/0
+  1389 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1390 ;;      Params:         0       0       0       0       0
+  1391 ;;      Locals:         1       0       0       0       0
+  1392 ;;      Temps:          0       0       0       0       0
+  1393 ;;      Totals:         1       0       0       0       0
+  1394 ;;Total ram usage:        1 bytes
+  1395 ;; Hardware stack levels used: 1
+  1396 ;; This function calls:
+  1397 ;;		Nothing
+  1398 ;; This function is called by:
+  1399 ;;		_TxByte
+  1400 ;;		_SPI_Tx_String
+  1401 ;; This function uses a non-reentrant model
+  1402 ;;
+  1403                           
+  1404     065B                     _SPI_Tx_Byte:	
+  1405                           ;psect for function _SPI_Tx_Byte
   1406                           
-  1407                           ;incstack = 0
-  1408                           ; Regs used in _SPI_Tx_Byte: [wreg]
-  1409                           ;SPI_Tx_Byte@data stored from wreg
-  1410     065C  00F0               	movwf	SPI_Tx_Byte@data
-  1411     065D                     l747:
-  1412                           
-  1413                           ;PIC16F877A_SPI.c: 78: void SPI_Tx_Byte(uint8_t data);PIC16F877A_SPI.c: 79: {;PIC16F877A
-      +                          _SPI.c: 80:     SSPBUF = data;
-  1414     065D  0870               	movf	SPI_Tx_Byte@data,w
-  1415     065E  1283               	bcf	3,5	;RP0=0, select bank0
-  1416     065F  1303               	bcf	3,6	;RP1=0, select bank0
-  1417     0660  0093               	movwf	19	;volatile
-  1418     0661                     l749:
-  1419                           
-  1420                           ;PIC16F877A_SPI.c: 82:     if(WCOL)
-  1421     0661  1F94               	btfss	20,7	;volatile
-  1422     0662  2E64               	goto	u31
-  1423     0663  2E65               	goto	u30
-  1424     0664                     u31:
-  1425     0664  2E66               	goto	l70
-  1426     0665                     u30:
-  1427     0665                     l751:
-  1428                           
-  1429                           ;PIC16F877A_SPI.c: 83:         WCOL = 0;
-  1430     0665  1394               	bcf	20,7	;volatile
-  1431     0666                     l70:
-  1432     0666  0008               	return
-  1433     0667                     __end_of_SPI_Tx_Byte:
-  1434     007E                     btemp	set	126	;btemp
-  1435     007E                     wtemp0	set	126
-  1436                           
-  1437                           	psect	idloc
-  1438                           
-  1439                           ;Config register IDLOC0 @ 0x2000
-  1440                           ;	unspecified, using default values
-  1441     2000                     	org	8192
-  1442     2000  3FFF               	dw	16383
-  1443                           
-  1444                           ;Config register IDLOC1 @ 0x2001
-  1445                           ;	unspecified, using default values
-  1446     2001                     	org	8193
-  1447     2001  3FFF               	dw	16383
-  1448                           
-  1449                           ;Config register IDLOC2 @ 0x2002
-  1450                           ;	unspecified, using default values
-  1451     2002                     	org	8194
-  1452     2002  3FFF               	dw	16383
-  1453                           
-  1454                           ;Config register IDLOC3 @ 0x2003
-  1455                           ;	unspecified, using default values
-  1456     2003                     	org	8195
-  1457     2003  3FFF               	dw	16383
-  1458                           
-  1459                           	psect	config
-  1460                           
-  1461                           ;Config register CONFIG @ 0x2007
-  1462                           ;	Oscillator Selection bits
-  1463                           ;	FOSC = HS, HS oscillator
-  1464                           ;	Watchdog Timer Enable bit
-  1465                           ;	WDTE = OFF, WDT disabled
-  1466                           ;	Power-up Timer Enable bit
-  1467                           ;	PWRTE = OFF, PWRT disabled
-  1468                           ;	Brown-out Reset Enable bit
-  1469                           ;	BOREN = ON, BOR enabled
-  1470                           ;	Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit
-  1471                           ;	LVP = ON, RB3/PGM pin has PGM function; low-voltage programming enabled
-  1472                           ;	Data EEPROM Memory Code Protection bit
-  1473                           ;	CPD = OFF, Data EEPROM code protection off
-  1474                           ;	Flash Program Memory Write Enable bits
-  1475                           ;	WRT = OFF, Write protection off; all program memory may be written to by EECON control
-  1476                           ;	In-Circuit Debugger Mode bit
-  1477                           ;	DEBUG = 0x1, unprogrammed default
-  1478                           ;	Flash Program Memory Code Protection bit
-  1479                           ;	CP = OFF, Code protection off
-  1480     2007                     	org	8199
-  1481     2007  3FFA               	dw	16378
+  1407                           
+  1408                           ;incstack = 0
+  1409                           ; Regs used in _SPI_Tx_Byte: [wreg]
+  1410                           ;SPI_Tx_Byte@data stored from wreg
+  1411     065B  00F0               	movwf	SPI_Tx_Byte@data
+  1412     065C                     l743:
+  1413                           
+  1414                           ;PIC16F877A_SPI.c: 80: void SPI_Tx_Byte(uint8_t data);PIC16F877A_SPI.c: 81: {;PIC16F877A
+      +                          _SPI.c: 82:     SSPBUF = data;
+  1415     065C  0870               	movf	SPI_Tx_Byte@data,w
+  1416     065D  1283               	bcf	3,5	;RP0=0, select bank0
+  1417     065E  1303               	bcf	3,6	;RP1=0, select bank0
+  1418     065F  0093               	movwf	19	;volatile
+  1419     0660                     l745:
+  1420                           
+  1421                           ;PIC16F877A_SPI.c: 84:     if(WCOL)
+  1422     0660  1F94               	btfss	20,7	;volatile
+  1423     0661  2E63               	goto	u31
+  1424     0662  2E64               	goto	u30
+  1425     0663                     u31:
+  1426     0663  2E65               	goto	l68
+  1427     0664                     u30:
+  1428     0664                     l747:
+  1429                           
+  1430                           ;PIC16F877A_SPI.c: 85:         WCOL = 0;
+  1431     0664  1394               	bcf	20,7	;volatile
+  1432     0665                     l68:
+  1433     0665  0008               	return
+  1434     0666                     __end_of_SPI_Tx_Byte:
+  1435     007E                     btemp	set	126	;btemp
+  1436     007E                     wtemp0	set	126
+  1437                           
+  1438                           	psect	idloc
+  1439                           
+  1440                           ;Config register IDLOC0 @ 0x2000
+  1441                           ;	unspecified, using default values
+  1442     2000                     	org	8192
+  1443     2000  3FFF               	dw	16383
+  1444                           
+  1445                           ;Config register IDLOC1 @ 0x2001
+  1446                           ;	unspecified, using default values
+  1447     2001                     	org	8193
+  1448     2001  3FFF               	dw	16383
+  1449                           
+  1450                           ;Config register IDLOC2 @ 0x2002
+  1451                           ;	unspecified, using default values
+  1452     2002                     	org	8194
+  1453     2002  3FFF               	dw	16383
+  1454                           
+  1455                           ;Config register IDLOC3 @ 0x2003
+  1456                           ;	unspecified, using default values
+  1457     2003                     	org	8195
+  1458     2003  3FFF               	dw	16383
+  1459                           
+  1460                           	psect	config
+  1461                           
+  1462                           ;Config register CONFIG @ 0x2007
+  1463                           ;	Oscillator Selection bits
+  1464                           ;	FOSC = HS, HS oscillator
+  1465                           ;	Watchdog Timer Enable bit
+  1466                           ;	WDTE = OFF, WDT disabled
+  1467                           ;	Power-up Timer Enable bit
+  1468                           ;	PWRTE = OFF, PWRT disabled
+  1469                           ;	Brown-out Reset Enable bit
+  1470                           ;	BOREN = ON, BOR enabled
+  1471                           ;	Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit
+  1472                           ;	LVP = ON, RB3/PGM pin has PGM function; low-voltage programming enabled
+  1473                           ;	Data EEPROM Memory Code Protection bit
+  1474                           ;	CPD = OFF, Data EEPROM code protection off
+  1475                           ;	Flash Program Memory Write Enable bits
+  1476                           ;	WRT = OFF, Write protection off; all program memory may be written to by EECON control
+  1477                           ;	In-Circuit Debugger Mode bit
+  1478                           ;	DEBUG = 0x1, unprogrammed default
+  1479                           ;	Flash Program Memory Code Protection bit
+  1480                           ;	CP = OFF, Code protection off
+  1481     2007                     	org	8199
+  1482     2007  3FFA               	dw	16378
 
 Data Sizes:
     Strings     0
     Constant    0
     Data        58
-    BSS         1
+    BSS         2
     Persistent  0
     Stack       0
 
 Auto Spaces:
     Space          Size  Autos    Used
     COMMON           14     14      14
-    BANK0            80      3      62
+    BANK0            80      3      63
     BANK1            80      0       0
     BANK3            96      0       0
     BANK2            96      0       0
@@ -1550,14 +1551,14 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (0) _main                                                 4     4      0    5323
+ (0) _main                                                 4     4      0    5779
                                              13 COMMON     1     1      0
                                               0 BANK0      3     3      0
                        _Matrix_Clear
                         _Matrix_Init
                   _Matrix_Write_Char
  ---------------------------------------------------------------------------------
- (1) _Matrix_Write_Char                                    7     6      1    1970
+ (1) _Matrix_Write_Char                                    7     6      1    2122
                                               6 COMMON     7     6      1
                              _TxByte
                              ___bmul
@@ -1565,18 +1566,18 @@ Call Graph Tables:
  (2) ___bmul                                               3     2      1     118
                                               0 COMMON     3     2      1
  ---------------------------------------------------------------------------------
- (1) _Matrix_Init                                          1     1      0    1686
+ (1) _Matrix_Init                                          1     1      0    1838
                                               6 COMMON     1     1      0
                     _SPI_Master_Init
                              _TxByte
  ---------------------------------------------------------------------------------
  (2) _SPI_Master_Init                                      0     0      0       0
  ---------------------------------------------------------------------------------
- (1) _Matrix_Clear                                         2     2      0    1620
+ (1) _Matrix_Clear                                         2     2      0    1772
                                               6 COMMON     2     2      0
                              _TxByte
  ---------------------------------------------------------------------------------
- (2) _TxByte                                               3     1      2    1530
+ (2) _TxByte                                               3     1      2    1682
                                               3 COMMON     3     1      2
                         _SPI_Tx_Byte
                          _SS_Disable
@@ -1625,87 +1626,87 @@ BANK1               50      0       0       7        0.0%
 BITBANK1            50      0       0       6        0.0%
 SFR1                 0      0       0       2        0.0%
 BITSFR1              0      0       0       2        0.0%
-BANK0               50      3      3E       5       77.5%
+BANK0               50      3      3F       5       78.8%
 BITBANK0            50      0       0       4        0.0%
 SFR0                 0      0       0       1        0.0%
 BITSFR0              0      0       0       1        0.0%
 COMMON               E      E       E       1      100.0%
 BITCOMMON            E      0       0       0        0.0%
 CODE                 0      0       0       0        0.0%
-DATA                 0      0      4C      12        0.0%
-ABS                  0      0      4C       3        0.0%
+DATA                 0      0      4D      12        0.0%
+ABS                  0      0      4D       3        0.0%
 NULL                 0      0       0       0        0.0%
 STACK                0      0       0       2        0.0%
 EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.41 build 20230208172133 
-Symbol Table                                                                                   Mon Aug 07 07:54:21 2023
+Symbol Table                                                                                   Sat Aug 19 09:02:40 2023
 
-          _SPI_Master_Init 0683                          pc 0002             ___bmul@product 0071  
-              _SPI_Tx_Byte 065C                         l70 0666                         l62 0682  
-                       l55 0695                         l66 0672                         u20 066D  
-                       u21 066C                         u30 0665                         u31 0664  
-           SS_Enable@slave 0070                         fsr 0004                        l103 06EE  
-                      l113 06D4                        l108 079C                        l117 07EC  
-                      l255 06BD                        l741 0668                        l901 06AF  
-                      l751 0665                        l903 06B3                        l745 066E  
-                      l761 068B                        l753 0683                        l921 0762  
-                      l913 075B                        l905 06B5                        l747 065D  
-                      l771 0692                        l763 068C                        l755 0686  
-                      l923 0792                        l915 0760                        l907 06B7  
-                      l749 0661                        l933 06C1                        l773 0693  
-                      l765 068D                        l757 0689                        l925 0796  
-                      l909 06BC                        l941 079E                        l935 06CA  
-                      l927 06BF                        l775 0694                        l767 068E  
-                      l759 068A                        l951 07CB                        _CKE 04A6  
-                      l937 06CE                        l769 0691                        l953 07CF  
-                      l945 07A7                        l961 06F5                        l883 0674  
-                      l891 06DC                        l955 07E3                        l947 07B0  
-                      l939 079E                        l971 070E                        l963 06FB  
-                      l893 06E2                        l949 07B3                        l965 0703  
-                      l957 06EF                        l887 067A                        l895 06E8  
-                      l967 0707                        l959 06F0                        l889 06D6  
-                      l897 06AA                        l969 070D                        _CKP 00A4  
-                      l899 06AB                        _GIE 005F                        u200 07E3  
-                      u201 07E2                        u210 070D                        u211 070C  
-                      u140 0679                        u141 0678                        u205 07DF  
-                      u150 06AF                        u151 06AE                        u160 06BC  
-                      u161 06BB                        u170 079C                        u171 079B  
-                      u227 0716                        u180 06D4                        u181 06D3  
-                      u190 07A6                        u191 07A5                        _SMP 04A7  
-                      fsr0 0004                        indf 0000                       _PEIE 005E  
-                     _WCOL 00A7                 _SS_Disable 0667                       _main 06EF  
+          _SPI_Master_Init 0682                          pc 0002             ___bmul@product 0071  
+              _SPI_Tx_Byte 065B                         l60 0681                         l53 0694  
+                       l64 0671                         l68 0665                         l97 06ED  
+                       u20 066C                         u21 066B                         u30 0664  
+                       u31 0663             SS_Enable@slave 0070                         fsr 0004  
+                      l102 079B                        l111 07EB                        l107 06D3  
+                      l251 06BC                        l741 066D                        l901 06D5  
+                      l743 065C                        l903 06DB                        l751 0685  
+                      l911 06AA                        l745 0660                        l737 0667  
+                      l905 06E1                        l761 068C                        l753 0688  
+                      l921 06BB                        l913 06AE                        l747 0664  
+                      l907 06E7                        l771 0693                        l763 068D  
+                      l755 0689                        l915 06B2                        l765 0690  
+                      l757 068A                        l749 0682                        l933 0761  
+                      l925 075A                        l917 06B4                        l909 06A9  
+                      l767 0691                        l759 068B                        l935 0791  
+                      l927 075F                        l919 06B6                        l951 079D  
+                      _CKE 04A6                        l945 06C0                        l769 0692  
+                      l937 0795                        l961 07B2                        l953 079D  
+                      l947 06C9                        l939 06BE                        l963 07CA  
+                      l949 06CD                        l965 07CE                        l957 07A6  
+                      l895 0673                        l967 07E2                        l959 07AF  
+                      l993 06EE                        _CKP 00A4                        l899 0679  
+                      l995 06EF                        _GIE 005F                        l997 06F4  
+                      l999 06FA                        u200 07E2                        u201 07E1  
+                      u140 0678                        u141 0677                        u205 07DE  
+                      u150 06AE                        u230 070C                        u151 06AD  
+                      u231 070B                        u160 06BB                        u161 06BA  
+                      u170 079B                        u171 079A                        u180 06D3  
+                      u181 06D2                        u190 07A5                        u191 07A4  
+                      u247 0715                        _SMP 04A7                        fsr0 0004  
+                      indf 0000                       l1001 0702                       l1003 0706  
+                     l1005 070C                       l1007 070D                       _PEIE 005E  
+                     _WCOL 00A7                 _SS_Disable 0666                       _main 06EE  
                      btemp 007E                       start 0000          ___bmul@multiplier 0072  
           SS_Disable@slave 0070                      ?_main 0070                      _PCFG0 04F8  
                     _PCFG1 04F9                      _PCFG2 04FA                      _PCFG3 04FB  
         Matrix_Clear@slave 0076                      _PORTD 0008                      _SSPM0 00A0  
                     _SSPM1 00A1                      _SSPM2 00A2                      _SSPM3 00A3  
                     _TRISD 0088              ??_Matrix_Init 0076                      _SSPIE 0463  
-                    _SSPEN 00A5                      _SSPIF 0063          _Matrix_Write_Char 079D  
-                    main@c 007D         ?_Matrix_Write_Char 0076                      pclath 000A  
-                    status 0003                      wtemp0 007E              ?_Matrix_Clear 0070  
-  __end_of_SPI_Master_Init 0696        ??_Matrix_Write_Char 0077            __initialization 07ED  
-             __end_of_main 0721                     ??_main 005A  __end_of_Matrix_Write_Char 07ED  
-      __end_of_Matrix_Init 079D                ?_SS_Disable 0070             ??_Matrix_Clear 0076  
-                   _TRISA5 042D                     _TRISC3 043B                     _TRISC4 043C  
-                   _TRISC5 043D                     _SSPBUF 0013                 TxByte@data 0074  
-                   _SS_pin 0052                     _TxByte 06D5       Matrix_Write_Char@col 007C  
-                   ___bmul 06A9          __end_of_SS_Enable 0683    __end_of__initialization 07FC  
-         ?_SPI_Master_Init 0070        ___bmul@multiplicand 0070             __pcstackCOMMON 0070  
-             __pidataBANK0 0721               ?_SPI_Tx_Byte 0070                _Matrix_Init 075B  
-               __pbssBANK0 005D               Matrix_Init@i 0076                 __pmaintext 06EF  
-                  ?_TxByte 0073                    ?___bmul 0070       __end_of_Matrix_Clear 06D5  
-          SPI_Tx_Byte@data 0070                TxByte@slave 0075      Matrix_Write_Char@data 0076  
-    Matrix_Write_Char@font 007A                    __ptext1 079D                    __ptext2 06A9  
-                  __ptext3 075B                    __ptext4 0683                    __ptext5 06BE  
-                  __ptext6 06D5                    __ptext7 0673                    __ptext8 0667  
-                  __ptext9 065C       end_of_initialization 07FC               ??_SS_Disable 0070  
-       __end_of_SS_Disable 0673                  _SS_Enable 0673             __end_of_TxByte 06EF  
-           __end_of___bmul 06BE               ?_Matrix_Init 0070        start_initialization 07ED  
-               ?_SS_Enable 0070               _Matrix_Clear 06BE                  TxByte@col 0073  
-                 ??_TxByte 0075                   ??___bmul 0071                 init_fetch0 0696  
-              __pdataBANK0 0020              Matrix_Clear@j 0077                  ___latbits 0002  
-            __pcstackBANK0 005A                   _FONT_7x5 0020                ??_SS_Enable 0070  
-        ??_SPI_Master_Init 0070              ??_SPI_Tx_Byte 0070     Matrix_Write_Char@slave 007B  
-                 _rcv_byte 005D        __end_of_SPI_Tx_Byte 0667                   init_ram0 069A  
+                    _SSPEN 00A5          _Matrix_Write_Char 079C                      main@c 007D  
+       ?_Matrix_Write_Char 0076                      pclath 000A                      status 0003  
+                    wtemp0 007E              ?_Matrix_Clear 0070    __end_of_SPI_Master_Init 0695  
+      ??_Matrix_Write_Char 0077            __initialization 07EC               __end_of_main 0720  
+                   ??_main 005A  __end_of_Matrix_Write_Char 07EC        __end_of_Matrix_Init 079C  
+              ?_SS_Disable 0070             ??_Matrix_Clear 0076                     _TRISA5 042D  
+                   _TRISC3 043B                     _TRISC4 043C                     _TRISC5 043D  
+                   _SSPBUF 0013                 TxByte@data 0074                     _SS_pin 0052  
+                   _TxByte 06D4       Matrix_Write_Char@col 007C                     ___bmul 06A8  
+        __end_of_SS_Enable 0682    __end_of__initialization 07FC           ?_SPI_Master_Init 0070  
+      ___bmul@multiplicand 0070             __pcstackCOMMON 0070               __pidataBANK0 0720  
+             ?_SPI_Tx_Byte 0070                _Matrix_Init 075A                 __pbssBANK0 005D  
+             Matrix_Init@i 0076                 __pmaintext 06EE                    ?_TxByte 0073  
+                  ?___bmul 0070       __end_of_Matrix_Clear 06D4            SPI_Tx_Byte@data 0070  
+              TxByte@slave 0075      Matrix_Write_Char@data 0076      Matrix_Write_Char@font 007A  
+                  __ptext1 079C                    __ptext2 06A8                    __ptext3 075A  
+                  __ptext4 0682                    __ptext5 06BD                    __ptext6 06D4  
+                  __ptext7 0672                    __ptext8 0666                    __ptext9 065B  
+     end_of_initialization 07FC               ??_SS_Disable 0070         __end_of_SS_Disable 0672  
+                _SS_Enable 0672             __end_of_TxByte 06EE             __end_of___bmul 06BD  
+             ?_Matrix_Init 0070        start_initialization 07EC                 ?_SS_Enable 0070  
+             _Matrix_Clear 06BD                  TxByte@col 0073                   ??_TxByte 0075  
+                 ??___bmul 0071                 init_fetch0 0695                __pdataBANK0 0020  
+            Matrix_Clear@j 0077                  ___latbits 0002              __pcstackBANK0 005A  
+                 _FONT_7x5 0020                ??_SS_Enable 0070          ??_SPI_Master_Init 0070  
+            ??_SPI_Tx_Byte 0070     Matrix_Write_Char@slave 007B        __end_of_SPI_Tx_Byte 0666  
+                 init_ram0 0699                _spi_str_idx 005D  

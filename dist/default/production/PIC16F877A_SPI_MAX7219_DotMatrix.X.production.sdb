@@ -21,19 +21,19 @@
 [v _Matrix_Clear Matrix_Clear `(v  1 e 1 0 ]
 "53
 [v _Matrix_Write_Char Matrix_Write_Char `(v  1 e 1 0 ]
-"4 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI.c
+"6 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI.c
 [v _SPI_Master_Init SPI_Master_Init `(v  1 e 1 0 ]
-"62
+"64
 [v _SS_Enable SS_Enable `(v  1 e 1 0 ]
-"70
+"72
 [v _SS_Disable SS_Disable `(v  1 e 1 0 ]
-"78
+"80
 [v _SPI_Tx_Byte SPI_Tx_Byte `(v  1 e 1 0 ]
 "7 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI_MAX7219_DotMatrix.c
 [v _main main `(v  1 e 1 0 ]
 "7 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X/MAX7219_DotMatrix.h
 [v _FONT_7x5 FONT_7x5 `[10][5]uc  1 e 50 0 ]
-"19 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X/PIC16F877A_SPI.h
+"16 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X/PIC16F877A_SPI.h
 [v _SS_pin SS_pin `[8]uc  1 e 8 0 ]
 "341 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
@@ -63,8 +63,6 @@
 [v _SSPEN SSPEN `VEb  1 e 0 @165 ]
 "2826
 [v _SSPIE SSPIE `VEb  1 e 0 @1123 ]
-"2829
-[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
 "2832
 [v _SSPM0 SSPM0 `VEb  1 e 0 @160 ]
 "2835
@@ -83,6 +81,8 @@
 [v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
 "3048
 [v _WCOL WCOL `VEb  1 e 0 @167 ]
+"3 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI.c
+[v _spi_str_idx spi_str_idx `ui  1 e 2 0 ]
 "7 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI_MAX7219_DotMatrix.c
 [v _main main `(v  1 e 1 0 ]
 {
@@ -124,10 +124,10 @@
 [v Matrix_Init@i i `uc  1 a 1 6 ]
 "43
 } 0
-"4 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI.c
+"6 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI.c
 [v _SPI_Master_Init SPI_Master_Init `(v  1 e 1 0 ]
 {
-"28
+"30
 } 0
 "46 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\MAX7219_DotMatrix.c
 [v _Matrix_Clear Matrix_Clear `(v  1 e 1 0 ]
@@ -152,30 +152,30 @@
 [v TxByte@slave slave `uc  1 a 1 5 ]
 "15
 } 0
-"62 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI.c
+"64 C:\Users\84935\MPLABXProjects\PIC16F877A_SPI_MAX7219_DotMatrix.X\PIC16F877A_SPI.c
 [v _SS_Enable SS_Enable `(v  1 e 1 0 ]
 {
 [v SS_Enable@slave slave `uc  1 a 1 wreg ]
 [v SS_Enable@slave slave `uc  1 a 1 wreg ]
-"64
+"66
 [v SS_Enable@slave slave `uc  1 a 1 0 ]
-"67
+"69
 } 0
-"70
+"72
 [v _SS_Disable SS_Disable `(v  1 e 1 0 ]
 {
 [v SS_Disable@slave slave `uc  1 a 1 wreg ]
 [v SS_Disable@slave slave `uc  1 a 1 wreg ]
-"72
+"74
 [v SS_Disable@slave slave `uc  1 a 1 0 ]
-"75
+"77
 } 0
-"78
+"80
 [v _SPI_Tx_Byte SPI_Tx_Byte `(v  1 e 1 0 ]
 {
 [v SPI_Tx_Byte@data data `uc  1 a 1 wreg ]
 [v SPI_Tx_Byte@data data `uc  1 a 1 wreg ]
-"80
+"82
 [v SPI_Tx_Byte@data data `uc  1 a 1 0 ]
-"84
+"86
 } 0

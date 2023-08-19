@@ -1,15 +1,15 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"27 ./PIC16F877A_SPI.h
-[; ;./PIC16F877A_SPI.h: 27: void SS_Enable(uint8_t slave);
+"23 ./PIC16F877A_SPI.h
+[; ;./PIC16F877A_SPI.h: 23: void SS_Enable(uint8_t slave);
 [v _SS_Enable `(v ~T0 @X0 0 ef1`uc ]
-"29
-[; ;./PIC16F877A_SPI.h: 29: void SPI_Tx_Byte(uint8_t data);
-[v _SPI_Tx_Byte `(v ~T0 @X0 0 ef1`uc ]
-"28
-[; ;./PIC16F877A_SPI.h: 28: void SS_Disable(uint8_t slave);
-[v _SS_Disable `(v ~T0 @X0 0 ef1`uc ]
 "25
-[; ;./PIC16F877A_SPI.h: 25: void SPI_Master_Init(void);
+[; ;./PIC16F877A_SPI.h: 25: void SPI_Tx_Byte(uint8_t data);
+[v _SPI_Tx_Byte `(v ~T0 @X0 0 ef1`uc ]
+"24
+[; ;./PIC16F877A_SPI.h: 24: void SS_Disable(uint8_t slave);
+[v _SS_Disable `(v ~T0 @X0 0 ef1`uc ]
+"21
+[; ;./PIC16F877A_SPI.h: 21: void SPI_Master_Init(void);
 [v _SPI_Master_Init `(v ~T0 @X0 0 ef ]
 "55 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h: 55: __asm("INDF equ 00h");
@@ -191,8 +191,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2364
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h: 2364: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"19 ./PIC16F877A_SPI.h
-[; ;./PIC16F877A_SPI.h: 19: uint8_t SS_pin[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
+"16 ./PIC16F877A_SPI.h
+[; ;./PIC16F877A_SPI.h: 16: uint8_t SS_pin[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 [v _SS_pin `uc ~T0 @X0 -> 8 `i e ]
 [i _SS_pin
 :U ..
@@ -206,13 +206,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 128 `i `uc
 ..
 ]
-"22
-[; ;./PIC16F877A_SPI.h: 22: uint8_t rcv_byte;
-[v _rcv_byte `uc ~T0 @X0 1 e ]
-[v F896 `uc ~T0 @X0 -> 5 `i t ]
+[v F895 `uc ~T0 @X0 -> 5 `i t ]
 "7 ./MAX7219_DotMatrix.h
 [; ;./MAX7219_DotMatrix.h: 7: char FONT_7x5[10][5] =
-[v _FONT_7x5 `F896 ~T0 @X0 -> 10 `i e ]
+[v _FONT_7x5 `F895 ~T0 @X0 -> 10 `i e ]
 [i _FONT_7x5
 :U ..
 :U ..
@@ -450,4 +447,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 "66
 [; ;MAX7219_DotMatrix.c: 66: }
 [e :UE 104 ]
+}
+"69
+[; ;MAX7219_DotMatrix.c: 69: void Matrix_Intensity(uint8_t slave, uint8_t intensity)
+[v _Matrix_Intensity `(v ~T0 @X0 1 ef2`uc`uc ]
+"70
+[; ;MAX7219_DotMatrix.c: 70: {
+{
+[e :U _Matrix_Intensity ]
+"69
+[; ;MAX7219_DotMatrix.c: 69: void Matrix_Intensity(uint8_t slave, uint8_t intensity)
+[v _slave `uc ~T0 @X0 1 r1 ]
+[v _intensity `uc ~T0 @X0 1 r2 ]
+"70
+[; ;MAX7219_DotMatrix.c: 70: {
+[f ]
+"71
+[; ;MAX7219_DotMatrix.c: 71:     if(intensity > 15)
+[e $ ! > -> _intensity `i -> 15 `i 111  ]
+"72
+[; ;MAX7219_DotMatrix.c: 72:         intensity = 15;
+[e = _intensity -> -> 15 `i `uc ]
+[e :U 111 ]
+"73
+[; ;MAX7219_DotMatrix.c: 73:     TxByte(slave, 0x0A, intensity);
+[e ( _TxByte (3 , , _slave -> -> 10 `i `uc _intensity ]
+"74
+[; ;MAX7219_DotMatrix.c: 74: }
+[e :UE 110 ]
 }

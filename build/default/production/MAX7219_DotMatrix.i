@@ -1862,12 +1862,11 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
 # 4 "./PIC16F877A_SPI.h" 2
-# 19 "./PIC16F877A_SPI.h"
+# 16 "./PIC16F877A_SPI.h"
 uint8_t SS_pin[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
 
-uint8_t rcv_byte;
-
+extern uint16_t spi_str_idx;
 
 void SPI_Master_Init(void);
 void SPI_Slave_Init(void);
@@ -1875,8 +1874,8 @@ void SS_Enable(uint8_t slave);
 void SS_Disable(uint8_t slave);
 void SPI_Tx_Byte(uint8_t data);
 void SPI_Tx_String(char* string);
-void Rx_Byte_Interrupt(uint8_t* rcv);
-void Rx_String_Interrupt(uint8_t* string, uint16_t len);
+uint8_t Rx_Byte_Interrupt(void);
+uint8_t Rx_String_Interrupt(uint8_t* string, uint16_t len);
 # 4 "./MAX7219_DotMatrix.h" 2
 
 
@@ -1898,6 +1897,7 @@ char FONT_7x5[10][5] =
 void Matrix_Init(void);
 void Matrix_Clear(uint8_t slave);
 void Matrix_Write_Char(uint8_t slave, uint8_t data);
+void Matrix_Intensity(uint8_t slave, uint8_t intensity);
 # 1 "MAX7219_DotMatrix.c" 2
 
 
@@ -1964,4 +1964,12 @@ void Matrix_Write_Char(uint8_t slave, uint8_t data)
     for(col = 2; col <= font + 1; ++col)
         TxByte(slave, col, FONT_7x5[data][col - 2]);
     TxByte(slave, col, 0x00);
+}
+
+
+void Matrix_Intensity(uint8_t slave, uint8_t intensity)
+{
+    if(intensity > 15)
+        intensity = 15;
+    TxByte(slave, 0x0A, intensity);
 }

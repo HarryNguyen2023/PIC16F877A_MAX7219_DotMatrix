@@ -1858,12 +1858,11 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
 # 4 "./PIC16F877A_SPI.h" 2
-# 19 "./PIC16F877A_SPI.h"
+# 16 "./PIC16F877A_SPI.h"
 uint8_t SS_pin[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
 
-uint8_t rcv_byte;
-
+extern uint16_t spi_str_idx;
 
 void SPI_Master_Init(void);
 void SPI_Slave_Init(void);
@@ -1871,10 +1870,12 @@ void SS_Enable(uint8_t slave);
 void SS_Disable(uint8_t slave);
 void SPI_Tx_Byte(uint8_t data);
 void SPI_Tx_String(char* string);
-void Rx_Byte_Interrupt(uint8_t* rcv);
-void Rx_String_Interrupt(uint8_t* string, uint16_t len);
+uint8_t Rx_Byte_Interrupt(void);
+uint8_t Rx_String_Interrupt(uint8_t* string, uint16_t len);
 # 1 "PIC16F877A_SPI.c" 2
 
+
+uint16_t spi_str_idx = 0;
 
 
 void SPI_Master_Init()
@@ -1967,17 +1968,24 @@ void SPI_Tx_String(char* string)
 }
 
 
-void Rx_Byte_Interrupt(uint8_t* rcv)
+uint8_t Rx_Byte_Interrupt()
 {
-    if(SSPIF)
-    {
-        *rcv = SSPBUF;
-    }
+    uint8_t rcv_char = SSPBUF;
+    return rcv_char;
 }
 
 
-void Rx_String_Interrupt(uint8_t* string, uint16_t len)
+uint8_t Rx_String_Interrupt(uint8_t* string, uint16_t len)
 {
-    for(uint16_t i = 0; i < len; ++i)
-        string[i] = SSPBUF;
+    if(spi_str_idx == len - 1)
+    {
+        string[spi_str_idx++] = SSPBUF;
+        string[spi_str_idx] = 0;
+        return 1;
+    }
+    else
+    {
+        string[spi_str_idx++] = SSPBUF;
+        return 0;
+    }
 }
